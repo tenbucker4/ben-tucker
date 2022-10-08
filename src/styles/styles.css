@@ -1,3 +1,50 @@
+header {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+header .me {
+  font-size: 24px;
+}
+header .header-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header .hamburger {
+  position: relative;
+  width: 75px;
+  height: 100%;
+}
+header .hamburger .hamburger-bun {
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+}
+header .hamburger .top-bun, header .hamburger .bottom-bun {
+  position: absolute;
+}
+
+.title-div {
+  position: relative;
+  z-index: 2;
+}
+.title-div .title-text {
+  padding-top: 150px;
+  padding-left: 12vw;
+}
+.title-div .title-text .text-name {
+  font-size: 80px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +53,18 @@
   color: white;
 }
 
-main {
-  background: linear-gradient(to top, rgb(2, 0, 36) 0%, rgb(2, 2, 52) 100%);
+#root {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-bg {
+  position: fixed;
+  background: linear-gradient(to top, rgb(2, 0, 36) 0%, #072142);
   height: 100vh;
+  width: 100%;
+  z-index: 0;
 }/*# sourceMappingURL=styles.css.map */

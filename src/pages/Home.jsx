@@ -1,8 +1,14 @@
 import React from 'react'
+import Title from '../components/Title'
+import Header from '../components/Header'
 
 const Home = () => {
   return (
-    <main>Home</main>
+    <main>
+        <div className='main-bg'></div>
+        <Header />
+        <Title />
+    </main>
   )
 }
 

@@ -1,0 +1,13 @@
+.title-div {
+    position: relative;
+    z-index: 2;
+
+    .title-text {
+        padding-top: 150px;
+        padding-left: 12vw;
+
+        .text-name {
+            font-size: 80px;
+        }
+    }
+}
