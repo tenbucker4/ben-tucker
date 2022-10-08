@@ -18,8 +18,17 @@
     position: relative;
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .main-bg {

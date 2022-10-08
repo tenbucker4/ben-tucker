@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import Icon from '@mdi/react'
-import { mdiGithub, mdiLink } from '@mdi/js';
-import { mdiLinkedin } from '@mdi/js';
-import { mdiFileAccount } from '@mdi/js';
+import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import "../styles/header.css"
 
-const Header = () => {
-	const [menuOpen, setMenuOpen] = useState(false)
+const Header = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<header>
