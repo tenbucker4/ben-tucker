@@ -9,5 +9,34 @@
         .text-name {
             font-size: 80px;
         }
+
+        .blocks {
+            width: 100px;
+            position: relative;
+            height: 20px;
+
+            .block {
+                position: absolute;
+                background-color: $main-red;
+                width: 75px;
+                height: 4px;
+                border-radius: 2px;
+            }
+
+            .left-block {
+                top: 7px;
+                left: 0;
+            }
+
+            .right-block {
+                top: 14px;
+                left: 25px;
+            }
+        }
+
+        .bio {
+            font-size: 24px;
+            color: $off-white;
+        }
     }
 }

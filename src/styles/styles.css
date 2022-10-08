@@ -44,6 +44,10 @@ header .hamburger .top-bun, header .hamburger .bottom-bun {
 .title-div .title-text .text-name {
   font-size: 80px;
 }
+.title-div .title-text .bio {
+  font-size: 24px;
+  color: rgb(180, 178, 178);
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
