@@ -2,6 +2,9 @@ import React from 'react'
 import Title from '../components/Title'
 import Header from '../components/Header'
 import Icon from '@mdi/react'
+import ProjectHero from '../components/ProjectHero'
+import AboutHero from '../components/AboutHero'
+import ContactHero from '../components/ContactHero'
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import "../styles/home.css"
 
@@ -31,7 +34,12 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 				</div>
 			</div>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-			<Title />
+			<div className="home-contents">
+				<Title />
+				<ProjectHero />
+				<AboutHero />
+				<ContactHero />
+			</div>
 		</main>
 	)
 }
