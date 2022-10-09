@@ -12,12 +12,15 @@ import "../styles/home.css"
 
 const Home = ({ menuOpen, setMenuOpen }) => {
 	const [titleRef, titleInView] = useInView();
+	const [projectRef, projectInView] = useInView();
+	const [aboutRef, aboutInView] = useInView();
+	const [contactRef, contactInView] = useInView();
 
 
 	return (
 		<main>
 			<div className='main-bg'></div>
-			<div className='menu' style={{ top: menuOpen ? "0vh" : "-100vh" }}>
+			<div className='menu' style={{ top: menuOpen ? "0vh" : "-100%" }}>
 				<div className="menu-container">
 					<ul>
 						<li>Home</li>
@@ -39,12 +42,12 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 				</div>
 			</div>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-			<ProgressBar titleInView={titleInView}/>
+			<ProgressBar titleInView={titleInView} projectInView={projectInView} aboutInView={aboutInView} contactInView={contactInView}/>
 			<div className="home-contents">
 				<Title titleRef={titleRef}/>
-				<ProjectHero />
-				<AboutHero />
-				<ContactHero />
+				<ProjectHero projectRef={projectRef} />
+				<AboutHero aboutRef={aboutRef}/>
+				<ContactHero contactRef={contactRef}/>
 			</div>
 		</main>
 	)

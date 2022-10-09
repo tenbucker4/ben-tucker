@@ -10,9 +10,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    z-index: 99;
 }
 
 .progress-bar {
+    cursor: pointer;
     width: 30px;
     height: 2px;
     background-color: white;
@@ -23,6 +25,7 @@
     width: 60px;
 }
 
+/* Home page sections */
 .home-contents {
     position: relative;
     height: 100vh;
@@ -43,7 +46,6 @@ section {
 
 .title-div {
     position: relative;
-    pointer-events: none;
     display: flex;
 }
 
