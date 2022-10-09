@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ContactHero = ({ contactRef }) => {
+const ContactHero = ({ contactRef, contactSection }) => {
 	return (
-		<section>
+		<section ref={contactSection}>
 			<div className='title-text'>
 				<div className='text-name' ref={contactRef}>Contact Me</div>
 				<div className='blocks'>

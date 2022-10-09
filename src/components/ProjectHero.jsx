@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProjectHero = ({ projectRef }) => {
+const ProjectHero = ({ projectRef, projectSection }) => {
 	return (
 		<section>
-			<div className='title-text'>
+			<div className='title-text' ref={projectSection}>
 				<div className='text-name' ref={projectRef}>Click</div>
 				<div className='blocks'>
 					<div className='block left-block'></div>

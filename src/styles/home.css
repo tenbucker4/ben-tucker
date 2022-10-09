@@ -10,13 +10,13 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    z-index: 99;
+    z-index: 20;
 }
 
 .progress-bar {
     cursor: pointer;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background-color: white;
     transition: width 0.3s ease-in-out;
 }
@@ -26,13 +26,13 @@
 }
 
 /* Home page sections */
-.home-contents {
+/* .home-contents {
     position: relative;
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-}
+} */
 
 section {
     position: relative;

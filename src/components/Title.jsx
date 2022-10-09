@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-const Title = ({ titleRef }) => {
+const Title = ({ titleRef, titleSection }) => {
 
 	return (
-		<section className='title-div'>
+		<section className='title-div' ref={titleSection}>
 			<div className='title-text'>
 				<div className='text-name' ref={titleRef}>Ben<br></br>Tucker</div>
 				<div className='blocks'>

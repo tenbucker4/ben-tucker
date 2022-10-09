@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useInView } from "react-intersection-observer";
 import Title from '../components/Title'
 import Header from '../components/Header'
@@ -15,6 +15,12 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 	const [projectRef, projectInView] = useInView();
 	const [aboutRef, aboutInView] = useInView();
 	const [contactRef, contactInView] = useInView();
+
+	const titleSection = useRef();
+	const projectSection = useRef();
+	const aboutSection = useRef();
+	const contactSection = useRef();
+	const homeContent = useRef();
 
 
 	return (
@@ -42,13 +48,11 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 				</div>
 			</div>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-			<ProgressBar titleInView={titleInView} projectInView={projectInView} aboutInView={aboutInView} contactInView={contactInView}/>
-			<div className="home-contents">
-				<Title titleRef={titleRef}/>
-				<ProjectHero projectRef={projectRef} />
-				<AboutHero aboutRef={aboutRef}/>
-				<ContactHero contactRef={contactRef}/>
-			</div>
+			<ProgressBar titleSection={titleSection} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} titleInView={titleInView} projectInView={projectInView} aboutInView={aboutInView} contactInView={contactInView}/>
+			<Title titleSection={titleSection} titleRef={titleRef}/>
+			<ProjectHero projectSection={projectSection} projectRef={projectRef} />
+			<AboutHero aboutSection={aboutSection} aboutRef={aboutRef}/>
+			<ContactHero contactSection={contactSection} contactRef={contactRef}/>
 		</main>
 	)
 }

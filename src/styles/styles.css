@@ -18,12 +18,16 @@
     position: relative;
 }
 
-body {
-    height: 100vh;
-}
-
 html {
     scroll-behavior: smooth;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 ul {
