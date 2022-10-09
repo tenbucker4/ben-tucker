@@ -31,7 +31,9 @@ section {
 }
 
 .text-name {
-    font-size: 96px;
+    font-family: "Didact Gothic", "Helvetica";
+    font-size: 92px;
+    text-transform: uppercase;
 }
 
 .bio {
@@ -88,6 +90,26 @@ section {
     z-index: 7;
 }
 
+.benzene-bond {
+    position: absolute;
+    width: 45%;
+    height: 10px;
+    z-index: 8;
+    background-color: rgba(7, 33, 66, 0.3);
+}
+
+.top-bond {
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-left-bond {
+    bottom: 30%;
+    left: -3%;
+    transform: rotate(60deg);
+}
+
 .molecule-container h1 {
     font-weight: bold;
     position: absolute;
@@ -102,18 +124,6 @@ section {
     text-shadow: 0 10px 15px rgb(2 11 22 / 20%);
 }
 
-/* .benzene-inner {
-    width: 380px;
-    height: 380px;
-    background-color: var(--dark-blue);
-    clip-path: polygon(26% 6%, 74% 6%, 100% 50%, 74% 94%, 26% 94%, 0% 50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 8;
-} */
-
 .molecule-bg {
     clip-path: polygon(26% 6%, 74% 6%, 100% 50%, 74% 94%, 26% 94%, 0% 50%);
     position: absolute;
@@ -123,28 +133,28 @@ section {
 }
 
 .bg-first-layer {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     height: 500px;
     width: 500px;
     z-index: 6;
 }
 
 .bg-second-layer {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.15);
     height: 600px;
     width: 600px;
     z-index: 5;
 }
 
 .bg-third-layer {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     height: 700px;
     width: 700px;
     z-index: 4;
 }
 
 .bg-fourth-layer {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     height: 800px;
     width: 800px;
     z-index: 3;
