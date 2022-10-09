@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    z-index: 20;
+    z-index: 9;
 }
 
 .progress-bar {
@@ -26,13 +26,6 @@
 }
 
 /* Home page sections */
-/* .home-contents {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-} */
 
 section {
     position: relative;
@@ -46,7 +39,7 @@ section {
 
 .title-div {
     position: relative;
-    display: flex;
+    /* display: flex; */
 }
 
 .title-text {
@@ -93,6 +86,12 @@ section {
     left: 40px;
 }
 
+.view-projects-btn,
+.learn-more-btn {
+    margin-top: 40px;
+}
+
+/* Benzene overlay */
 .molecule-container {
     position: fixed;
     top: 0;
@@ -112,8 +111,8 @@ section {
 }
 
 .benzene-outer {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    aspect-ratio: 1 / 1;
     background-color: white;
     clip-path: polygon(26% 6%, 74% 6%, 100% 50%, 74% 94%, 26% 94%, 0% 50%);
     position: absolute;
@@ -126,7 +125,7 @@ section {
 .benzene-bond {
     position: absolute;
     width: 45%;
-    height: 10px;
+    height: 2%;
     z-index: 8;
     background-color: rgba(7, 33, 66, 0.3);
 }
@@ -155,7 +154,7 @@ section {
     top: 40%;
     left: 0;
     font-size: 60px;
-    letter-spacing: 10px;
+    /* letter-spacing: 10px; */
     z-index: 50;
     color: var(--main-red);
     clip-path: none;
@@ -164,6 +163,7 @@ section {
 
 .molecule-bg {
     clip-path: polygon(26% 6%, 74% 6%, 100% 50%, 74% 94%, 26% 94%, 0% 50%);
+    aspect-ratio: 1 / 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -172,32 +172,29 @@ section {
 
 .bg-first-layer {
     background-color: rgba(255, 255, 255, 0.2);
-    height: 500px;
-    width: 500px;
+    width: 600px;
     z-index: 6;
 }
 
 .bg-second-layer {
     background-color: rgba(255, 255, 255, 0.15);
-    height: 600px;
-    width: 600px;
+    width: 700px;
     z-index: 5;
 }
 
 .bg-third-layer {
     background-color: rgba(255, 255, 255, 0.1);
-    height: 700px;
-    width: 700px;
+    width: 800px;
     z-index: 4;
 }
 
 .bg-fourth-layer {
     background-color: rgba(255, 255, 255, 0.05);
-    height: 800px;
-    width: 800px;
+    width: 900px;
     z-index: 3;
 }
 
+/* Side menu */
 .menu {
     position: fixed;
     width: 100%;
@@ -254,6 +251,52 @@ section {
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .title-text {
+        left: 5vw;
+    }
+
+    .text-name {
+        font-size: 72px;
+    }
+
+    .bio {
+        font-size: 20px;
+    }
+
+    .benzene-overlay h1 {
+        font-size: 40px;
+        top: 38%;
+    }
+
+    .benzene-outer {
+        width: 40vw;
+    }
+
+    .bg-first-layer {
+        width: 45vw;
+    }
+
+    .bg-second-layer {
+        width: 50vw;
+    }
+
+    .bg-third-layer {
+        width: 55vw;
+    }
+
+    .bg-fourth-layer {
+        width: 60vw;
+    }
+
+    .progress-bar-container {
+        top: auto;
+        bottom: 2%;
+        left: 50%;
+        transform: rotate(-90deg) translateY(-45%);
+    }
 }
 
 @media (min-width: 500px) {

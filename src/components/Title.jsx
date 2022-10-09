@@ -10,7 +10,7 @@ const Title = ({ titleRef, titleSection }) => {
 					<div className='block left-block'></div>
 					<div className='block right-block'></div>
 				</div>
-				<div className='bio'>frontend developer / chemist</div>
+				<div className='bio'>Frontend developer / chemist</div>
 			</div>
 			<div className='molecule-container'>
 				<div className='molecule-bg bg-first-layer'></div>

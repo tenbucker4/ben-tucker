@@ -9,7 +9,8 @@ const ProjectHero = ({ projectRef, projectSection }) => {
 					<div className='block left-block'></div>
 					<div className='block right-block'></div>
 				</div>
-				<div className='bio'>projects</div>
+				<div className='bio'>Featured project</div>
+				<button className='view-projects-btn'>See More</button>
 			</div>
 		</section>
 	)

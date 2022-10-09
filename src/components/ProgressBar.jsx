@@ -2,7 +2,6 @@ import React from 'react'
 
 const ProgressBar = ({ titleSection, projectSection, aboutSection, contactSection, titleInView, projectInView, aboutInView, contactInView }) => {
 	const scroll = (section) => {
-		console.log("click")
 		section.current?.scrollIntoView({ behavior: "smooth" });
 	}
 

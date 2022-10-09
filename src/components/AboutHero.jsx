@@ -10,6 +10,7 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 					<div className='block right-block'></div>
 				</div>
 				<div className='bio'>I love learning, solving problems,<br></br> and building visually-appealing products</div>
+				<button className='learn-more-btn'>Learn More</button>
 			</div>
 		</section>
 	)
