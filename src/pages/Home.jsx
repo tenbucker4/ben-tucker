@@ -8,6 +8,7 @@ import AboutHero from '../components/AboutHero'
 import ContactHero from '../components/ContactHero'
 import ProgressBar from '../components/ProgressBar'
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
+import resume from "../media/Ben-Tucker-Resume.pdf";
 import "../styles/home.css"
 
 const Home = ({ menuOpen, setMenuOpen }) => {
@@ -34,15 +35,24 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 						<li>Contact</li>
 					</ul>
 					<div className='menu-links'>
-						<Icon path={mdiGithub}
-						size={1.5}
-						color="white"/>
-						<Icon path={mdiLinkedin}
-						size={1.5}
-						color="white"/>
-						<Icon path={mdiFileAccount}
-						size={1.5}
-						color="white"/>
+						<a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
+							<Icon path={mdiGithub}
+							className='social-link'
+							size={1.5}
+							color="white"/>
+						</a>
+						<a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
+							<Icon path={mdiLinkedin}
+							className='social-link'
+							size={1.5}
+							color="white"/>
+						</a>
+						<a href={resume} download>
+							<Icon path={mdiFileAccount}
+							className='social-link'
+							size={1.5}
+							color="white"/>	
+						</a>
 					</div>
 				</div>
 			</div>

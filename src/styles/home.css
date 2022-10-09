@@ -5,7 +5,7 @@
     top: 50%;
     transform: translateY(-50%);
     height: 125px;
-    width: 100px;
+    width: 75px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,7 +18,11 @@
     width: 20px;
     height: 3px;
     background-color: rgb(170, 170, 170);
-    transition: width 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.progress-bar:hover {
+    background-color: white;
 }
 
 .progress-bar.active {
@@ -27,7 +31,6 @@
 }
 
 /* Home page sections */
-
 section {
     position: relative;
     z-index: 2;
@@ -40,7 +43,6 @@ section {
 
 .title-div {
     position: relative;
-    /* display: flex; */
 }
 
 .title-text {
@@ -52,7 +54,7 @@ section {
 }
 
 .text-name {
-    font-size: 92px;
+    font-size: 86px;
     text-transform: uppercase;
 }
 
@@ -120,7 +122,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
-    box-shadow: 13px 13px 51.69px 0 rgb(184 182 213 / 40%);
+    box-shadow: 13px 13px 51.69px 0 rgb(0 0 0 / 40%);
 }
 
 .benzene-bond {
@@ -139,21 +141,21 @@ section {
 }
 
 .bottom-left-bond {
-    bottom: 30%;
-    left: -4%;
+    bottom: 29%;
+    left: -3%;
     transform: rotate(60deg);
 }
 
 .bottom-right-bond {
     transform: rotate(-60deg);
-    bottom: 30%;
-    right: -4%;
+    bottom: 29%;
+    right: -3%;
 }
 
 .benzene-overlay h1 {
     font-weight: bold;
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 0;
     font-size: 60px;
     letter-spacing: 5px;
@@ -253,6 +255,14 @@ section {
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+
+.social-link path {
+    transition: fill 0.1s ease-in-out;
+}
+
+.social-link:hover path {
+    fill: rgb(167, 165, 165) !important;
 }
 
 @media (max-width: 1200px) {
