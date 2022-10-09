@@ -99,7 +99,7 @@ section {
     z-index: 50;
     color: var(--main-red);
     clip-path: none;
-    text-shadow: 2px 2px 5px #000000;
+    text-shadow: 1px 2px 8px #505050;
 }
 
 /* .benzene-inner {
