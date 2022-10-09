@@ -1,3 +1,28 @@
+/* Progress Bar  */
+.progress-bar-container {
+    position: fixed;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 125px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.progress-bar.active {
+    width: 60px;
+}
+
 .home-contents {
     position: relative;
     height: 100vh;
@@ -100,7 +125,7 @@ section {
 }
 
 .top-bond {
-    top: 12%;
+    top: 11%;
     left: 50%;
     transform: translateX(-50%);
 }

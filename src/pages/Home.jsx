@@ -1,14 +1,19 @@
 import React from 'react'
+import { useInView } from "react-intersection-observer";
 import Title from '../components/Title'
 import Header from '../components/Header'
 import Icon from '@mdi/react'
 import ProjectHero from '../components/ProjectHero'
 import AboutHero from '../components/AboutHero'
 import ContactHero from '../components/ContactHero'
+import ProgressBar from '../components/ProgressBar'
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import "../styles/home.css"
 
 const Home = ({ menuOpen, setMenuOpen }) => {
+	const [titleRef, titleInView] = useInView();
+
+
 	return (
 		<main>
 			<div className='main-bg'></div>
@@ -34,8 +39,9 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 				</div>
 			</div>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+			<ProgressBar titleInView={titleInView}/>
 			<div className="home-contents">
-				<Title />
+				<Title titleRef={titleRef}/>
 				<ProjectHero />
 				<AboutHero />
 				<ContactHero />
