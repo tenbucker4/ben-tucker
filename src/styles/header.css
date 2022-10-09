@@ -70,4 +70,8 @@ header {
     .header-nav svg {
         display: none;
     }
+
+    .me {
+        font-size: 18px;
+    }
 }

@@ -15,14 +15,15 @@
 
 .progress-bar {
     cursor: pointer;
-    width: 30px;
+    width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(170, 170, 170);
     transition: width 0.3s ease-in-out;
 }
 
 .progress-bar.active {
-    width: 60px;
+    width: 40px;
+    background-color: white;
 }
 
 /* Home page sections */
@@ -51,7 +52,6 @@ section {
 }
 
 .text-name {
-    font-family: "Didact Gothic", "Helvetica";
     font-size: 92px;
     text-transform: uppercase;
 }
@@ -113,19 +113,20 @@ section {
 .benzene-outer {
     width: 500px;
     aspect-ratio: 1 / 1;
-    background-color: white;
+    background-color: rgb(178, 176, 176);
     clip-path: polygon(26% 6%, 74% 6%, 100% 50%, 74% 94%, 26% 94%, 0% 50%);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
+    box-shadow: 13px 13px 51.69px 0 rgb(184 182 213 / 40%);
 }
 
 .benzene-bond {
     position: absolute;
     width: 45%;
-    height: 2%;
+    height: 4%;
     z-index: 8;
     background-color: rgb(216, 214, 214);
     transition: opacity 0.5s ease-in-out;
@@ -160,7 +161,6 @@ section {
     color: var(--main-red);
     clip-path: none;
     text-shadow: 0 10px 15px rgb(2 11 22 / 20%);
-    transition: opacity 0.5s ease-in-out, left 1s ease-in-out;
 }
 
 .molecule-bg {
@@ -257,7 +257,7 @@ section {
 
 @media (max-width: 1200px) {
     .title-text {
-        left: 5vw;
+        left: 2rem;
     }
 
     .text-name {
@@ -269,7 +269,7 @@ section {
     }
 
     .benzene-overlay h1 {
-        font-size: 40px;
+        font-size: 42px;
         top: 38%;
     }
 
@@ -304,5 +304,57 @@ section {
 @media (min-width: 500px) {
     .menu-links {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .benzene-overlay h1 {
+        font-size: 28px;
+        left: 2rem;
+    }
+
+    .molecule-container,
+    .benzene-overlay {
+        top: 3rem;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .title-text {
+        top: auto;
+        bottom: 0;
+    }
+
+    .text-name {
+        font-size: 50px;
+    }
+
+    .bio {
+        font-size: 16px;
+    }
+
+    .benzene-outer {
+        width: 50vw;
+    }
+
+    .bg-first-layer {
+        width: 60vw;
+    }
+
+    .bg-second-layer {
+        width: 70vw;
+    }
+
+    .bg-third-layer {
+        width: 80vw;
+    }
+
+    .bg-fourth-layer {
+        width: 90vw;
+    }
+
+    .menu ul {
+        font-size: 44px;
     }
 }
