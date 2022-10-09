@@ -11,9 +11,16 @@ const Title = () => {
             </div>
             <div className='bio'>frontend developer / chemist</div>
         </div>
-		<div className='molecule'>
-			<div className='benzene-outer'></div>
-			<div className='benzine-inner'></div>
+		<div className='molecule-container'>
+			<h1>PORTFOLIO</h1>
+			<div className="molecule">
+				<div className='benzene-outer'></div>
+				{/* <div className='benzene-inner'></div> */}
+				<div className='molecule-bg bg-first-layer'></div>
+				<div className='molecule-bg bg-second-layer'></div>
+				<div className='molecule-bg bg-third-layer'></div>
+				<div className='molecule-bg bg-fourth-layer'></div>
+			</div>
 		</div>
     </section>
   )
