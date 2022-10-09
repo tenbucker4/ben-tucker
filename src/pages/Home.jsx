@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useInView } from "react-intersection-observer";
 import Title from '../components/Title'
 import Header from '../components/Header'
@@ -20,7 +20,6 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 	const projectSection = useRef();
 	const aboutSection = useRef();
 	const contactSection = useRef();
-	const homeContent = useRef();
 
 
 	return (
@@ -49,7 +48,7 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 			</div>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<ProgressBar titleSection={titleSection} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} titleInView={titleInView} projectInView={projectInView} aboutInView={aboutInView} contactInView={contactInView}/>
-			<Title titleSection={titleSection} titleRef={titleRef}/>
+			<Title titleSection={titleSection} titleRef={titleRef} />
 			<ProjectHero projectSection={projectSection} projectRef={projectRef} />
 			<AboutHero aboutSection={aboutSection} aboutRef={aboutRef}/>
 			<ContactHero contactSection={contactSection} contactRef={contactRef}/>

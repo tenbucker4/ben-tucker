@@ -127,7 +127,8 @@ section {
     width: 45%;
     height: 2%;
     z-index: 8;
-    background-color: rgba(7, 33, 66, 0.3);
+    background-color: rgb(216, 214, 214);
+    transition: opacity 0.5s ease-in-out;
 }
 
 .top-bond {
@@ -154,11 +155,12 @@ section {
     top: 40%;
     left: 0;
     font-size: 60px;
-    /* letter-spacing: 10px; */
+    letter-spacing: 5px;
     z-index: 50;
     color: var(--main-red);
     clip-path: none;
     text-shadow: 0 10px 15px rgb(2 11 22 / 20%);
+    transition: opacity 0.5s ease-in-out, left 1s ease-in-out;
 }
 
 .molecule-bg {
@@ -276,19 +278,19 @@ section {
     }
 
     .bg-first-layer {
-        width: 45vw;
+        width: 48vw;
     }
 
     .bg-second-layer {
-        width: 50vw;
+        width: 56vw;
     }
 
     .bg-third-layer {
-        width: 55vw;
+        width: 64vw;
     }
 
     .bg-fourth-layer {
-        width: 60vw;
+        width: 72vw;
     }
 
     .progress-bar-container {
