@@ -217,7 +217,6 @@ section {
     height: auto;
     overflow: hidden;
     filter: brightness(0.7);
-    opacity: 0.9;
 }
 
 .hero-image {
@@ -226,7 +225,7 @@ section {
     max-width: 750px;
     aspect-ratio: 1.495/ 1;
     overflow: hidden;
-    background-color: rgba(7, 33, 66, 0.9);
+    background-color: rgba(7, 33, 66);
     display: flex;
     align-items: center;
     justify-content: center;

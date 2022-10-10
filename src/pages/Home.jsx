@@ -25,7 +25,6 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<main>
-			<div className='main-bg'></div>
 			<div className='menu' style={{ top: menuOpen ? "0vh" : "-100%" }}>
 				<div className="menu-container">
 					<ul>

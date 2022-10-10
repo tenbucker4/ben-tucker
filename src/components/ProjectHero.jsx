@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProjectHero = ({ projectRef, projectSection }) => {
 	return (
@@ -10,7 +11,9 @@ const ProjectHero = ({ projectRef, projectSection }) => {
 					<div className='block right-block'></div>
 				</div>
 				<div className='bio'>Featured project</div>
-				<button className='view-projects-btn'>See More</button>
+				<Link to="/projects">
+					<button className='view-projects-btn'>See More</button>
+				</Link>
 			</div>
 			<div className="hero-image-container">
 				<img className='landscape' src={require("../media/click-landscape.jpg")} alt="click" />
