@@ -4,12 +4,11 @@
     left: 32px;
     top: 50%;
     transform: translateY(-50%);
-    height: 125px;
-    width: 75px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    gap: 2rem;
     z-index: 9;
 }
 
@@ -18,7 +17,7 @@
     width: 20px;
     height: 3px;
     background-color: rgb(170, 170, 170);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .progress-bar.active {
@@ -206,13 +205,31 @@ section {
     margin: 100px 8% 0 auto;
 }
 
-.hero-image-container img {
+.landscape {
     position: absolute;
     width: 100%;
     max-width: 750px;
     height: auto;
     overflow: hidden;
-    filter: brightness(0.6);
+    filter: brightness(0.7);
+    opacity: 0.9;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    max-width: 750px;
+    aspect-ratio: 1.495/ 1;
+    overflow: hidden;
+    background-color: rgba(7, 33, 66, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    width: 45%;
+    height: auto;
 }
 
 /* Contact Hero */
@@ -342,10 +359,9 @@ section {
     }
 
     .progress-bar-container {
-        top: auto;
-        bottom: 2%;
-        left: 50%;
-        transform: rotate(-90deg) translateY(-45%);
+        top: 85%;
+        left: calc(50% + 28px);
+        transform: rotate(-90deg) translateY(-50%);
     }
 }
 

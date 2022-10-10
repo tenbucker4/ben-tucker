@@ -1,4 +1,6 @@
 import React from 'react'
+import Icon from '@mdi/react'
+import { mdiAccount } from '@mdi/js';
 
 const AboutHero = ({ aboutRef, aboutSection }) => {
 	return (
@@ -11,6 +13,13 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 				</div>
 				<div className='bio'>I love learning, solving problems,<br></br> and building visually-appealing products</div>
 				<button className='learn-more-btn'>Learn More</button>
+			</div>
+			<div className="hero-image-container">
+				<div className='hero-image'>
+					<Icon path={mdiAccount}
+					className='avatar'
+					color="#ff4d5a"/>
+				</div>
 			</div>
 		</section>
 	)

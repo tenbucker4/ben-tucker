@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import Icon from '@mdi/react'
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import resume from "../media/Ben-Tucker-Resume.pdf";
@@ -8,7 +9,9 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<header>
-			<div className='me'>Ben Tucker</div>
+			<Link to="/">
+				<div className='me'>Ben Tucker</div>
+			</Link>
 			<div className='header-nav'>
 				<a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
 					<Icon path={mdiGithub}

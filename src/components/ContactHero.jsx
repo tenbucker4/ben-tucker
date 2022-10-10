@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '@mdi/react'
-import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
+import { mdiGithub, mdiLinkedin, mdiFileAccount, mdiMessageReplyText } from '@mdi/js';
 import resume from "../media/Ben-Tucker-Resume.pdf";
 
 const ContactHero = ({ contactRef, contactSection }) => {
@@ -34,6 +34,13 @@ const ContactHero = ({ contactRef, contactSection }) => {
 							color="white"/>	
 						</a>
 					</div>
+				</div>
+			</div>
+			<div className="hero-image-container">
+				<div className='hero-image'>
+					<Icon path={mdiMessageReplyText}
+					className='avatar'
+					color="#ff4d5a"/>
 				</div>
 			</div>
 		</section>
