@@ -12,6 +12,9 @@ const ProjectHero = ({ projectRef, projectSection }) => {
 				<div className='bio'>Featured project</div>
 				<button className='view-projects-btn'>See More</button>
 			</div>
+			<div className="hero-image-container">
+				<img src={require("../media/click-landscape.jpg")} alt="click" />
+			</div>
 		</section>
 	)
 }

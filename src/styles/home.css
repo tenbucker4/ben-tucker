@@ -21,10 +21,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-.progress-bar:hover {
-    background-color: white;
-}
-
 .progress-bar.active {
     width: 40px;
     background-color: white;
@@ -38,7 +34,7 @@ section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .title-div {
@@ -122,13 +118,12 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 7;
-    box-shadow: 13px 13px 51.69px 0 rgb(0 0 0 / 40%);
 }
 
 .benzene-bond {
     position: absolute;
     width: 45%;
-    height: 4%;
+    height: 2%;
     z-index: 8;
     background-color: rgb(216, 214, 214);
     transition: opacity 0.5s ease-in-out;
@@ -196,6 +191,49 @@ section {
     background-color: rgba(255, 255, 255, 0.05);
     width: 900px;
     z-index: 3;
+}
+
+/* Project Hero */
+.hero-image-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 65%;
+    height: 75%;
+    top: 45%;
+    left: 60%;
+    transform: translate(-45%, -60%);
+    margin: 100px 8% 0 auto;
+}
+
+.hero-image-container img {
+    position: absolute;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(0.6);
+}
+
+/* Contact Hero */
+.contact-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.contact-bio p {
+    cursor: pointer;
+}
+
+.contact-bio p:hover {
+    color: rgb(167, 165, 165);
+}
+
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
 }
 
 /* Side menu */
@@ -337,7 +375,7 @@ section {
     }
 
     .text-name {
-        font-size: 50px;
+        font-size: 46px;
     }
 
     .bio {
@@ -366,5 +404,14 @@ section {
 
     .menu ul {
         font-size: 44px;
+    }
+
+    .hero-image-container {
+        width: calc(100% - 4rem);
+        left: 50%;
+        top: 8%;
+        transform: translateX(-50%);
+        height: 40%;
+        margin: 60px 8% 0 auto;
     }
 }
