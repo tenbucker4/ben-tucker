@@ -1,14 +1,19 @@
 /* Progress Bar  */
-.progress-bar-container {
+.progress {
     position: fixed;
     left: 32px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar-container {
+    height: 100px;
+    width: 65px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
+    justify-content: space-between;
     z-index: 9;
 }
 
@@ -17,7 +22,7 @@
     width: 20px;
     height: 3px;
     background-color: rgb(170, 170, 170);
-    transition: all 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
 }
 
 .progress-bar.active {
@@ -62,7 +67,7 @@ section {
     width: 250px;
     position: relative;
     height: 20px;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .block {
@@ -358,10 +363,30 @@ section {
         width: 72vw;
     }
 
+    .progress {
+        left: initial;
+        bottom: 60px;
+        height: 70px;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 9;
+    }
+
     .progress-bar-container {
-        top: 85%;
-        left: calc(50% + 28px);
-        transform: rotate(-90deg) translateY(-50%);
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .progress-bar {
+        width: 3px;
+        height: 20px;
+        transition: height 0.2s ease-in-out;
+    }
+
+    .progress-bar.active {
+        width: 3px;
+        height: 40px;
     }
 }
 
