@@ -18,7 +18,15 @@ function App() {
                         <Home menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                     }
                 ></Route>
-                <Route path="/projects" element={<Projects />}></Route>
+                <Route
+                    path="/projects"
+                    element={
+                        <Projects
+                            menuOpen={menuOpen}
+                            setMenuOpen={setMenuOpen}
+                        />
+                    }
+                ></Route>
             </Routes>
         </BrowserRouter>
     );

@@ -412,6 +412,7 @@ section {
     .title-text {
         top: auto;
         bottom: 5%;
+        width: calc(100% - 4rem);
     }
 
     .text-name {
