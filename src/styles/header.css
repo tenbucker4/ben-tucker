@@ -52,18 +52,20 @@ header {
     top: 20px;
 }
 
+.top-bun.active,
+.bottom-bun.active {
+    transform-origin: right;
+    width: calc(40px * 87.5%);
+}
+
 .top-bun.active {
     transform: rotate(-45deg);
-    transform-origin: right;
     top: -4.5px;
-    width: calc(40px * 87.5%);
 }
 
 .bottom-bun.active {
     transform: rotate(45deg);
-    transform-origin: right;
     top: 24.5px;
-    width: calc(40px * 87.5%);
 }
 
 @media (max-width: 500px) {
