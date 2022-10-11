@@ -22,8 +22,6 @@
 .project-title,
 .project-type,
 .project-description {
-    width: 50%;
-    text-align: center;
 }
 
 .project-image {
@@ -33,25 +31,8 @@
     transition: all 0.4s ease-in-out;
 }
 
-.project-image.active,
-.project-title.active,
-.project-type.active,
-.project-description.active {
-    width: 70%;
-}
-
-.project-image.active {
-    background-color: black;
-}
-
 .project-description {
     position: relative;
     z-index: 0;
     transition: all 0.4s ease-in-out;
-}
-
-.hide-project {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
 }
