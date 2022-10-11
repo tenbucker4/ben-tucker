@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import allProjects from '../projects/allProjects'
 import Project from '../components/Project'
@@ -11,6 +12,14 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
         <>
             <Menu menuOpen={menuOpen}/>
             <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Link to="/">
+                <div className="back-btn">
+                    <div className="arrow">
+                        <span className="arrow-wing"></span>
+                    </div>
+                    <p>BACK</p>
+                </div>
+            </Link>
             <div className='projects'>
                 {allProjects.map((project, index) => {
                     return (
