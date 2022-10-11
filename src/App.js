@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Header from "./components/Header";
+import About from "./pages/About";
 import "./styles/styles.css";
 
 function App() {
@@ -25,6 +25,12 @@ function App() {
                             menuOpen={menuOpen}
                             setMenuOpen={setMenuOpen}
                         />
+                    }
+                ></Route>
+                <Route
+                    path="/about"
+                    element={
+                        <About menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                     }
                 ></Route>
             </Routes>
