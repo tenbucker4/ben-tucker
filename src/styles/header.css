@@ -68,7 +68,7 @@ header {
     top: 24.5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .header-nav svg {
         display: none;
     }

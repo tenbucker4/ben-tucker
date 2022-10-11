@@ -30,6 +30,8 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                             type={project.type}
                             description={project.description}
                             stack={project.techStack}
+                            codeLink={project.codeLink}
+                            liveLink={project.liveLink}
                         />
                     )
                 })}

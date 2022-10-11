@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Project = ({ imgSrc, title, type, description, stack }) => {
+const Project = ({ imgSrc, title, type, description, stack, codeLink, liveLink }) => {
 
     return (
         <div className="project-container">
@@ -17,8 +17,8 @@ const Project = ({ imgSrc, title, type, description, stack }) => {
                     <p>{stack}</p>
                 </div>
                 <div className='project-links-container'>
-                    <button>Live Site</button>
-                    <button>See Code</button>
+                    <a href={liveLink} target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
+                    <a href={codeLink} target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
                 </div>
                 </div>
             <div className='project-media'>
