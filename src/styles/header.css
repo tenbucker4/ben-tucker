@@ -69,11 +69,13 @@ header {
 }
 
 @media (max-width: 700px) {
-    .header-nav svg {
-        display: none;
-    }
-
     .me {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-nav svg {
+        display: none;
     }
 }
