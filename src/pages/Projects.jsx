@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import allProjects from '../projects/allProjects'
@@ -7,6 +7,9 @@ import Menu from '../components/Menu'
 import "../styles/projects.css"
 
 const Projects = ({ menuOpen, setMenuOpen }) => {
+    useEffect(() => {
+		setMenuOpen(false)
+	}, [])
 
     return (
         <>

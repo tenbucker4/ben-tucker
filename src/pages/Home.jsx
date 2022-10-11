@@ -20,6 +20,10 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 	const aboutSection = useRef();
 	const contactSection = useRef();
 
+	useEffect(() => {
+		setMenuOpen(false)
+	}, [])
+
 
 	return (
 		<main>
