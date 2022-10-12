@@ -13,13 +13,13 @@ function App() {
             <Routes>
                 <Route
                     exact
-                    path="/"
+                    path="/ben-tucker"
                     element={
                         <Home menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                     }
                 ></Route>
                 <Route
-                    path="/projects"
+                    path="/ben-tucker/projects"
                     element={
                         <Projects
                             menuOpen={menuOpen}
@@ -28,7 +28,7 @@ function App() {
                     }
                 ></Route>
                 <Route
-                    path="/about"
+                    path="/ben-tucker/about"
                     element={
                         <About menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
                     }

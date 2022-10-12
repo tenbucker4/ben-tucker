@@ -11,7 +11,7 @@ const ProjectHero = ({ projectRef, projectSection }) => {
 					<div className='block right-block'></div>
 				</div>
 				<div className='bio'>Featured project</div>
-				<Link to="/projects">
+				<Link to="/ben-tucker/projects">
 					<button className='view-projects-btn'>See More</button>
 				</Link>
 			</div>

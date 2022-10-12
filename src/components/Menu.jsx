@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import Icon from '@mdi/react'
 import resume from "../media/Ben-Tucker-Resume.pdf";
@@ -10,9 +10,9 @@ const Menu = ({ menuOpen }) => {
         <div className='menu' style={{ top: menuOpen ? "0vh" : "-100%" }}>
             <div className="menu-container">
                 <ul>
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/projects"><li>Projects</li></Link>
-                    <Link to="/about"><li>About</li></Link>
+                    <Link to="/ben-tucker"><li>Home</li></Link>
+                    <Link to="/ben-tucker/projects"><li>Projects</li></Link>
+                    <Link to="/ben-tucker/about"><li>About</li></Link>
                 </ul>
                 <a href="mailto:bwtucker4@gmail.com"><p>bwtucker4@gmail.com</p></a>
                 <div className='menu-links'>

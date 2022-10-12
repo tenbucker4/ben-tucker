@@ -13,7 +13,7 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 					<div className='block right-block'></div>
 				</div>
 				<div className='bio'>I love learning, solving problems,<br></br> and building visually-appealing products</div>
-				<Link to="/about">
+				<Link to="/ben-tucker/about">
 					<button className='learn-more-btn'>Learn More</button>
 				</Link>
 			</div>

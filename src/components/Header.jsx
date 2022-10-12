@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import Icon from '@mdi/react'
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import resume from "../media/Ben-Tucker-Resume.pdf";
@@ -10,7 +9,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<header>
-			<Link to="/">
+			<Link to="/ben-tucker">
 				<div className='me'>Ben Tucker</div>
 			</Link>
 			<div className='header-nav'>

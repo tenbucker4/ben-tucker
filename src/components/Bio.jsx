@@ -9,7 +9,6 @@ import { mdiReact } from '@mdi/js';
 import { mdiSass } from '@mdi/js';
 import { mdiFirebase } from '@mdi/js';
 import { mdiGit } from '@mdi/js';
-import { mdiCellphoneScreenshot } from '@mdi/js';
 
 const Bio = () => {
     return (

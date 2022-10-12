@@ -22,7 +22,7 @@ const Project = ({ imgSrc, number, title, type, description, stack, codeLink, li
                 </div>
                 </div>
             <div className='project-media'>
-                <img src={imgSrc} className="project-image"></img>
+                <img src={imgSrc} className="project-image" href={title}></img>
             </div>
         </div>
     )

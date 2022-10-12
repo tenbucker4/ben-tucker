@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const BackBtn = () => {
     return (
-        <Link to="/">
+        <Link to="/ben-tucker">
             <div className="back-btn">
                 <div className="arrow">
                     <span className="arrow-wing"></span>
