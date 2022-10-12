@@ -24,7 +24,8 @@ const Bio = () => {
 					</div>
 					<div className="bio-left">
 						<h1>About Me</h1>
-						<p>I'm a formally educated chemist (M.Sc.) and a self-taught frontend developer.
+						<p>I'm a formally educated chemist (M.Sc.) and a self-taught frontend developer. I love
+							learning, solving complex problems, and building intuitive, visually-appealing products.
 							Since discovering web development, I've become fascinated with the combination of
 							logic, creativity, and constant new technologies that promote a mentality of lifelong learning. 
 							When I'm away from my computer, I love playing basketball, golf, video games, and spending time

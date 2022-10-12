@@ -78,15 +78,15 @@
     .bio-right {
         width: 100%;
     }
+
+    .bio-right {
+        padding-bottom: 30px;
+    }
 }
 
 @media (max-width: 600px) {
     .bio-left {
         font-size: smaller;
-    }
-
-    .bio-right {
-        padding-bottom: 75px;
     }
 
     .bio-left p {
