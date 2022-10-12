@@ -23,6 +23,7 @@
     height: 3px;
     background-color: rgb(170, 170, 170);
     transition: width 0.2s ease-in-out;
+    border-radius: 1.5px;
 }
 
 .progress-bar.active {
