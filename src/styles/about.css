@@ -81,10 +81,6 @@
 }
 
 @media (max-width: 600px) {
-    .bio-left {
-        font-size: smaller;
-    }
-
     .bio-left p {
         line-height: 24px;
     }
@@ -92,9 +88,5 @@
     .skill-icon {
         width: 2.5rem !important;
         height: auto;
-    }
-
-    .skill p {
-        font-size: 12px;
     }
 }

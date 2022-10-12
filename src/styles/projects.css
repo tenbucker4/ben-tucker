@@ -138,8 +138,8 @@
     .project-text {
         gap: 0.5rem;
         position: absolute;
-        top: auto;
-        bottom: 0px;
+        top: 50%;
+        bottom: auto;
         left: 0;
         width: 100%;
         padding: 2rem 2rem 75px 2rem;

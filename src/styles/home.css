@@ -157,7 +157,7 @@ section {
     position: absolute;
     top: 38%;
     left: 0;
-    font-size: 60px;
+    font-size: 68px;
     letter-spacing: 5px;
     z-index: 50;
     color: var(--main-red);
@@ -422,7 +422,7 @@ section {
 
 @media (max-width: 500px) {
     .benzene-overlay h1 {
-        font-size: 28px;
+        font-size: 32px;
         left: 2rem;
     }
 
