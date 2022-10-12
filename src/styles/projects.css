@@ -138,12 +138,16 @@
     .project-text {
         gap: 0.5rem;
         position: absolute;
-        top: 50%;
+        top: 40%;
         bottom: auto;
         left: 0;
         width: 100%;
         padding: 2rem 2rem 75px 2rem;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.95), #07214295);
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.7)
+        );
         z-index: 2;
         justify-content: center;
     }

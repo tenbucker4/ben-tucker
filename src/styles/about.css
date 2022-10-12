@@ -85,6 +85,10 @@
         line-height: 24px;
     }
 
+    .bio-right {
+        padding-bottom: 40px;
+    }
+
     .skill-icon {
         width: 2.5rem !important;
         height: auto;
