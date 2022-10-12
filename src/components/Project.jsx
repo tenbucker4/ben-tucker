@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Project = ({ imgSrc, title, type, description, stack, codeLink, liveLink }) => {
+const Project = ({ imgSrc, number, title, type, description, stack, codeLink, liveLink }) => {
 
     return (
         <div className="project-container">
             <div className="project-text">
                 <div className="project-heading">
-                    <h1>{title}</h1>
+                    <h1><span style={{ color: "#ff4d5a" }}>{`${number} `}</span>{title}</h1>
                     <h3>{type}</h3>
                 </div>
                 <div className="project-description">

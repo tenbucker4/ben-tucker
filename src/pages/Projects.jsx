@@ -22,6 +22,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
                         <Project 
                             key={index}
                             imgSrc={project.imgSrc}
+                            number={project.number}
                             title={project.title}
                             type={project.type}
                             description={project.description}

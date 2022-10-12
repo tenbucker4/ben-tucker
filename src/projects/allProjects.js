@@ -6,7 +6,8 @@ import ether from "../media/ether.jpg";
 const allProjects = [
     {
         imgSrc: click,
-        title: "01. Click",
+        number: "01.",
+        title: "Click",
         type: "Instant Messaging Application",
         description:
             "Click is an instant messaging application featuring user authentication, text and image messaging, real-time online/offline contact status, and profile customization.",
@@ -16,7 +17,8 @@ const allProjects = [
     },
     {
         imgSrc: youclone,
-        title: "02. YouClone",
+        number: "02.",
+        title: "YouClone",
         type: "YouTube Replica",
         description:
             "YouClone is a YouTube replica built with RapidAPI. Features include category/manual search functionality for videos/channels and real-time subscriber and view count.",
@@ -26,7 +28,8 @@ const allProjects = [
     },
     {
         imgSrc: theRange,
-        title: "03. The Range",
+        number: "03.",
+        title: "The Range",
         type: "Shopping Cart Application",
         description:
             "The Range is a shopping cart application where users can browse golf equipment. Features include manual/category product search and add/edit/delete cart functionality.",
@@ -36,7 +39,8 @@ const allProjects = [
     },
     {
         imgSrc: ether,
-        title: "04. Ether",
+        number: "04.",
+        title: "Ether",
         type: "Educational Space App",
         description:
             "Ether is an educational app where users can learn more about out solar system. Real-time data such as number of known moons and averages temperatures are displayed using The Solar System OpenData public API.",
