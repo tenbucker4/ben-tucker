@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ben-tucker/static/css/main.7cb3e858.css",
-    "main.js": "/ben-tucker/static/js/main.ea0febb4.js",
+    "main.css": "/ben-tucker/static/css/main.1777eade.css",
+    "main.js": "/ben-tucker/static/js/main.57493223.js",
     "static/media/click.jpg": "/ben-tucker/static/media/click.aa4233a708b94d92a921.jpg",
     "static/media/ether.jpg": "/ben-tucker/static/media/ether.68cb3783967559185c2d.jpg",
     "static/media/youclone.jpg": "/ben-tucker/static/media/youclone.50e73e059f6d0afac07c.jpg",
     "static/media/click-landscape.jpg": "/ben-tucker/static/media/click-landscape.89e76c75e62dc6b294ae.jpg",
-    "static/media/Ben-Tucker-Resume.pdf": "/ben-tucker/static/media/Ben-Tucker-Resume.95e8eea762b6b037bf26.pdf",
+    "static/media/Ben-Tucker-Resume.pdf": "/ben-tucker/static/media/Ben-Tucker-Resume.dfe5aa06c20770b95c48.pdf",
     "static/media/the-range.jpg": "/ben-tucker/static/media/the-range.b826bc6b9138ba95b782.jpg",
     "index.html": "/ben-tucker/index.html",
-    "main.7cb3e858.css.map": "/ben-tucker/static/css/main.7cb3e858.css.map",
-    "main.ea0febb4.js.map": "/ben-tucker/static/js/main.ea0febb4.js.map"
+    "main.1777eade.css.map": "/ben-tucker/static/css/main.1777eade.css.map",
+    "main.57493223.js.map": "/ben-tucker/static/js/main.57493223.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cb3e858.css",
-    "static/js/main.ea0febb4.js"
+    "static/css/main.1777eade.css",
+    "static/js/main.57493223.js"
   ]
 }
