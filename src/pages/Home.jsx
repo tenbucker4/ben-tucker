@@ -27,7 +27,7 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<main>
-			<Menu menuOpen={menuOpen}/>
+			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<ProgressBar titleSection={titleSection} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} titleInView={titleInView} projectInView={projectInView} aboutInView={aboutInView} contactInView={contactInView}/>
 			<Title titleSection={titleSection} titleRef={titleRef} />

@@ -13,7 +13,7 @@ const Projects = ({ menuOpen, setMenuOpen }) => {
 
     return (
         <>
-            <Menu menuOpen={menuOpen}/>
+            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
             <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <BackBtn />
             <div className='projects'>

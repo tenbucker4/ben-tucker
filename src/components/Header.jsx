@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Icon from '@mdi/react'
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import resume from "../media/Ben-Tucker-Resume.pdf";

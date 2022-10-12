@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
 import Icon from '@mdi/react'
 import resume from "../media/Ben-Tucker-Resume.pdf";
 
 const Menu = ({ menuOpen }) => {
+
     return (
         <div className='menu' style={{ top: menuOpen ? "0vh" : "-100%" }}>
             <div className="menu-container">
@@ -12,8 +13,8 @@ const Menu = ({ menuOpen }) => {
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/projects"><li>Projects</li></Link>
                     <Link to="/about"><li>About</li></Link>
-                    <Link to="/"><li>Contact</li></Link>
                 </ul>
+                <a href="mailto:bwtucker4@gmail.com"><p>bwtucker4@gmail.com</p></a>
                 <div className='menu-links'>
                     <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
                         <Icon path={mdiGithub}

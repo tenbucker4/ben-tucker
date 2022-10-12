@@ -248,6 +248,7 @@ section {
 
 .contact-bio p {
     cursor: pointer;
+    transition: all 0.1s ease-in-out;
 }
 
 .contact-bio p:hover {
@@ -286,6 +287,15 @@ section {
     line-height: 80px;
     display: flex;
     flex-direction: column;
+}
+
+.menu-container a p {
+    font-size: 24px;
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-container a p:hover {
+    color: rgb(167, 165, 165);
 }
 
 .menu ul li {
@@ -402,6 +412,10 @@ section {
     .menu ul {
         font-size: 40px;
         line-height: 65px;
+    }
+
+    .menu-container a p {
+        font-size: 20px;
     }
 }
 

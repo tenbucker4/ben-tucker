@@ -4,7 +4,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-    padding: 120px 2rem 2rem 2rem;
+    padding: 130px 2rem 2rem 2rem;
 }
 
 .bio-container {
@@ -65,6 +65,12 @@
 
 @media (max-width: 800px) {
     .bio-container {
+        justify-content: flex-start;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    .bio-container {
         flex-direction: column;
     }
 
@@ -75,12 +81,6 @@
 }
 
 @media (max-width: 600px) {
-    .bio-container {
-        justify-content: flex-start;
-        position: relative;
-        overflow-y: auto;
-    }
-
     .bio-left {
         font-size: smaller;
     }
