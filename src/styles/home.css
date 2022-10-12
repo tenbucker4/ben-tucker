@@ -5,16 +5,16 @@
     height: 100%;
     display: flex;
     align-items: center;
-    z-index: 9;
+    z-index: 8;
 }
 
 .progress-bar-container {
-    height: 100px;
-    width: 65px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    gap: 1rem;
+    height: fit-content;
 }
 
 .progress-bar {
@@ -230,6 +230,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.9;
 }
 
 .avatar {
@@ -365,8 +366,8 @@ section {
 
     .progress {
         left: initial;
-        bottom: 75px;
-        height: 70px;
+        bottom: 50px;
+        height: 40px;
         width: 100%;
         justify-content: center;
         align-items: flex-start;
@@ -376,6 +377,7 @@ section {
     .progress-bar-container {
         flex-direction: row;
         align-items: flex-end;
+        height: 40px;
     }
 
     .progress-bar {

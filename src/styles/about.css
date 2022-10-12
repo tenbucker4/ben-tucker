@@ -1,7 +1,18 @@
-.bio-container {
+.bio-section {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 120px 2rem 2rem 2rem;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    max-width: 1000px;
 }
 
 .bio-bg {
@@ -22,6 +33,72 @@
     max-width: 750px;
 }
 
+.bio-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bio-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .bio-left p {
-    line-height: 30px;
+    line-height: 28px;
+}
+
+@media (max-width: 800px) {
+    .bio-container {
+        flex-direction: column;
+    }
+
+    .bio-left,
+    .bio-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .bio-container {
+        justify-content: flex-start;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    .bio-left {
+        font-size: smaller;
+    }
+
+    .bio-right {
+        padding-bottom: 75px;
+    }
+
+    .bio-left p {
+        line-height: 24px;
+    }
+
+    .skill-icon {
+        width: 2.5rem !important;
+        height: auto;
+    }
+
+    .skill p {
+        font-size: 12px;
+    }
 }

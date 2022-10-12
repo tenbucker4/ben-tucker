@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Icon from '@mdi/react'
 import { mdiAccount } from '@mdi/js';
 
@@ -12,7 +13,9 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 					<div className='block right-block'></div>
 				</div>
 				<div className='bio'>I love learning, solving problems,<br></br> and building visually-appealing products</div>
-				<button className='learn-more-btn'>Learn More</button>
+				<Link to="/about">
+					<button className='learn-more-btn'>Learn More</button>
+				</Link>
 			</div>
 			<div className="hero-image-container">
 				<div className='hero-image'>
