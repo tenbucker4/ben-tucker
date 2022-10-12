@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ben-tucker/static/css/main.06732960.css",
+    "main.js": "/ben-tucker/static/js/main.a75f20b9.js",
+    "static/media/click.jpg": "/ben-tucker/static/media/click.aa4233a708b94d92a921.jpg",
+    "static/media/ether.jpg": "/ben-tucker/static/media/ether.68cb3783967559185c2d.jpg",
+    "static/media/youclone.jpg": "/ben-tucker/static/media/youclone.50e73e059f6d0afac07c.jpg",
+    "static/media/click-landscape.jpg": "/ben-tucker/static/media/click-landscape.89e76c75e62dc6b294ae.jpg",
+    "static/media/Ben-Tucker-Resume.pdf": "/ben-tucker/static/media/Ben-Tucker-Resume.95e8eea762b6b037bf26.pdf",
+    "static/media/the-range.jpg": "/ben-tucker/static/media/the-range.b826bc6b9138ba95b782.jpg",
+    "index.html": "/ben-tucker/index.html",
+    "main.06732960.css.map": "/ben-tucker/static/css/main.06732960.css.map",
+    "main.a75f20b9.js.map": "/ben-tucker/static/js/main.a75f20b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06732960.css",
+    "static/js/main.a75f20b9.js"
+  ]
+}
