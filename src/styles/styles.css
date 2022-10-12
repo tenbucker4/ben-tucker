@@ -17,8 +17,6 @@
 #root {
     position: relative;
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
 }
 
 html {
@@ -27,7 +25,7 @@ html {
 
 main {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - calc(100vh - 100%));
     width: 100vw;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
