@@ -26,15 +26,18 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 
 
 	return (
-		<main>
+		<>
 			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<ProgressBar titleSection={titleSection} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} titleInView={titleInView} projectInView={projectInView} aboutInView={aboutInView} contactInView={contactInView}/>
-			<Title titleSection={titleSection} titleRef={titleRef} />
-			<ProjectHero projectSection={projectSection} projectRef={projectRef} />
-			<AboutHero aboutSection={aboutSection} aboutRef={aboutRef}/>
-			<ContactHero contactSection={contactSection} contactRef={contactRef}/>
-		</main>
+			<main>
+				<Title titleSection={titleSection} titleRef={titleRef} />
+				<ProjectHero projectSection={projectSection} projectRef={projectRef} />
+				<AboutHero aboutSection={aboutSection} aboutRef={aboutRef}/>
+				<ContactHero contactSection={contactSection} contactRef={contactRef}/>
+			</main>
+		</>
+		
 	)
 }
 

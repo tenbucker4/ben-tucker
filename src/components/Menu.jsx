@@ -7,7 +7,7 @@ import resume from "../media/Ben-Tucker-Resume.pdf";
 const Menu = ({ menuOpen }) => {
 
     return (
-        <div className='menu' style={{ top: menuOpen ? "-100vh" : "0vh" }}>
+        <div className='menu' style={{ top: menuOpen ? "0" : "-100vh" }}>
             <div className="menu-container">
                 <ul>
                     <Link to="/ben-tucker"><li>Home</li></Link>
