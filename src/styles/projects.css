@@ -126,10 +126,6 @@
         z-index: 1;
     }
 
-    .project-media img {
-        filter: brightness(0.7);
-    }
-
     .project-media,
     .project-text {
         width: 100%;
@@ -139,17 +135,17 @@
         gap: 0.5rem;
         position: absolute;
         top: 40%;
-        bottom: auto;
+        bottom: 0;
         left: 0;
         width: 100%;
         padding: 2rem 2rem 75px 2rem;
         background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.95),
-            rgba(0, 0, 0, 0.7)
+            to bottom,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 1)
         );
         z-index: 2;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .project-text p {
