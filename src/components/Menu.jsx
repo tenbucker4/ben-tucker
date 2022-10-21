@@ -13,8 +13,8 @@ const Menu = ({ menuOpen }) => {
                     <Link to="/ben-tucker"><li>Home</li></Link>
                     <Link to="/ben-tucker/projects"><li>Projects</li></Link>
                     <Link to="/ben-tucker/about"><li>About</li></Link>
+                    <a href="mailto:bwtucker4@gmail.com"><li>Contact</li></a>
                 </ul>
-                <a href="mailto:bwtucker4@gmail.com"><p>bwtucker4@gmail.com</p></a>
                 <div className='menu-links'>
                     <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
                         <Icon path={mdiGithub}

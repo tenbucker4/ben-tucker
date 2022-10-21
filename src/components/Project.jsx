@@ -18,7 +18,7 @@ const Project = ({ imgSrc, number, title, type, description, stack, codeLink, li
                 </div>
                 <div className='project-links-container'>
                     <a href={liveLink} target="_blank" rel="noreferrer"><button className="live-site">Live Site</button></a>
-                    <a href={codeLink} target="_blank" rel="noreferrer"><button className="see-code">See Code</button></a>
+                    <a href={codeLink} target="_blank" rel="noreferrer"><button className="see-code">View Code</button></a>
                 </div>
                 </div>
             <div className='project-media'>

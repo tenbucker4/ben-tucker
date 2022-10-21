@@ -266,7 +266,7 @@ section {
     bottom: auto;
     width: 100%;
     height: calc(100vh - calc(100vh - 100%));
-    background: linear-gradient(to right, var(--dark-blue), var(--main-red));
+    background: linear-gradient(to bottom, var(--dark-blue), black);
     z-index: 10;
     transition: all 0.4s ease-in-out;
     display: flex;
@@ -292,11 +292,6 @@ section {
 
 .menu-container a p {
     font-size: 24px;
-    transition: all 0.1s ease-in-out;
-}
-
-.menu-container a p:hover {
-    color: rgb(167, 165, 165);
 }
 
 .menu ul li {
@@ -313,7 +308,7 @@ section {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: white;
+    background-color: var(--main-red);
     transform-origin: bottom right;
     transition: transform 0.4s ease-out;
 }
