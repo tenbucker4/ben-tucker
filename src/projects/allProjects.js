@@ -21,7 +21,7 @@ const allProjects = [
         title: "YouClone",
         type: "YouTube Replica",
         description:
-            "YouClone is a YouTube replica built with RapidAPI. Features include category/manual search functionality for videos/channels and real-time subscriber and view count.",
+            "YouClone is a YouTube replica. Features include category/manual search functionality for videos/channels and real-time subscriber and view count.",
         techStack: "HTML, CSS, JavaScript, React, MaterialUI",
         codeLink: "https://github.com/tenbucker4/youclone",
         liveLink: "https://tenbucker4.github.io/youclone/",
