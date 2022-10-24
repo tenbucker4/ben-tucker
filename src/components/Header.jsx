@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Menu from './Menu';
 import Icon from '@mdi/react'
@@ -7,12 +7,18 @@ import resume from "../media/Ben-Tucker-Resume.pdf";
 import "../styles/header.css"
 
 const Header = ({ menuOpen, setMenuOpen }) => {
+	const scrollTop = () => {
+		window.scrollTo(0, 0);
+	}
+
+	useEffect(() => {
+		document.body.classList.toggle("scroll-restrict");
+	}, [menuOpen])
+
 
 	return (
 		<header style={{ backgroundColor: menuOpen? "transparent" : "#03030290" }}>
-			<Link to="/ben-tucker">
-				<p style={{ filter: menuOpen? "blur(4px)" : "none", cursor: menuOpen? "default" : "pointer" }} className='me main-accent serif'>Ben Tucker</p>
-			</Link>
+			<button onClick={() => scrollTop()} style={{ filter: menuOpen? "blur(4px)" : "none", cursor: menuOpen? "default" : "pointer" }} className='home-link main-accent serif'>Ben Tucker</button>
 			<div className='header-nav'>
 				<button className='header-btn'>Projects</button>
 				<button className='header-btn'>About</button>

@@ -27,9 +27,8 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<>
-			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-			<main style={{ filter: menuOpen? "blur(4px)" : "none" }}>
+			<main style={{ filter: menuOpen? "blur(4px)" : "none", pointerEvents: menuOpen? "none" : "default" }}>
 				<Title titleSection={titleSection} titleRef={titleRef} />
 				<ProjectHero projectSection={projectSection} projectRef={projectRef} />
 				<AboutHero aboutSection={aboutSection} aboutRef={aboutRef}/>
