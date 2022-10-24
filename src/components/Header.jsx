@@ -10,7 +10,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 	return (
 		<header>
 			<Link to="/ben-tucker">
-				<div className='me'>Ben Tucker</div>
+				<div className='me main-accent'>Ben Tucker</div>
 			</Link>
 			<div className='header-nav'>
 				<a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>

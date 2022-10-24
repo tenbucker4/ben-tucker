@@ -1,4 +1,4 @@
-/* Progress Bar  */
+/* Progress Bar 
 .progress {
     position: fixed;
     left: 32px;
@@ -29,36 +29,30 @@
 .progress-bar.active {
     width: 40px;
     background-color: white;
-}
+} */
 
 /* Home page sections */
-
 .title-div {
     position: relative;
 }
 
-.text-name {
-    font-size: 86px;
-    text-transform: uppercase;
-}
-
-.bio {
-    font-size: 24px;
-    font-weight: 300;
+.title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .blocks {
     width: 250px;
     position: relative;
     height: 20px;
-    margin: 1.5rem 0;
 }
 
 .block {
     position: absolute;
-    background-color: var(--main-red);
+    background-color: var(--main-accent);
     width: 80px;
-    height: 4px;
+    height: 3px;
     border-radius: 2px;
 }
 
@@ -72,13 +66,17 @@
     left: 40px;
 }
 
+.p-truncate {
+    max-width: 550px;
+}
+
 .view-projects-btn,
 .learn-more-btn {
     margin-top: 40px;
 }
 
 /* Benzene overlay */
-.molecule-container {
+/* .molecule-container {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -179,7 +177,7 @@
     background-color: rgba(255, 255, 255, 0.05);
     width: 900px;
     z-index: 3;
-}
+} */
 
 /* Project Hero */
 .hero-image-container {
@@ -316,44 +314,7 @@
 }
 
 @media (max-width: 1200px) {
-    .title-text {
-        left: 2rem;
-    }
-
-    .text-name {
-        font-size: 72px;
-    }
-
-    .bio {
-        font-size: 20px;
-    }
-
-    .benzene-overlay h1 {
-        font-size: 48px;
-        top: 38%;
-    }
-
-    .benzene-outer {
-        width: 40vw;
-    }
-
-    .bg-first-layer {
-        width: 48vw;
-    }
-
-    .bg-second-layer {
-        width: 56vw;
-    }
-
-    .bg-third-layer {
-        width: 64vw;
-    }
-
-    .bg-fourth-layer {
-        width: 72vw;
-    }
-
-    .progress {
+    /* .progress {
         left: initial;
         bottom: 20px;
         height: 40px;
@@ -378,80 +339,11 @@
     .progress-bar.active {
         width: 3px;
         height: 40px;
-    }
+    } */
 }
 
 @media (min-width: 500px) {
     .menu-links {
         display: none;
-    }
-}
-
-@media (max-width: 700px) {
-    .menu ul {
-        font-size: 40px;
-        line-height: 65px;
-    }
-
-    .menu-container a p {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    .benzene-overlay h1 {
-        font-size: 32px;
-        left: 2rem;
-    }
-
-    .molecule-container,
-    .benzene-overlay {
-        top: 3rem;
-        left: 0;
-        width: 100%;
-        height: 50%;
-    }
-
-    .title-text {
-        top: 60%;
-        bottom: auto;
-        width: calc(100% - 4rem);
-    }
-
-    .text-name {
-        font-size: 46px;
-    }
-
-    .bio {
-        font-size: 16px;
-    }
-
-    .benzene-outer {
-        width: 50vw;
-    }
-
-    .bg-first-layer {
-        width: 60vw;
-    }
-
-    .bg-second-layer {
-        width: 70vw;
-    }
-
-    .bg-third-layer {
-        width: 80vw;
-    }
-
-    .bg-fourth-layer {
-        width: 90vw;
-    }
-
-    .hero-image-container {
-        width: calc(100% - 4rem);
-        left: 50%;
-        top: 20px;
-        transform: translateX(-50%);
-        height: 40%;
-        margin: 60px 8% 0 auto;
     }
 }
