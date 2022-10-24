@@ -7,34 +7,14 @@ import resume from "../media/Ben-Tucker-Resume.pdf";
 const Menu = ({ menuOpen }) => {
 
     return (
-        <div className='menu' style={{ top: menuOpen ? "0" : "-100vh" }}>
+        <div className='menu' style={{ right: menuOpen ? "0" : "-100%" }}>
             <div className="menu-container">
                 <ul>
-                    <Link to="/ben-tucker"><li>Home</li></Link>
-                    <Link to="/ben-tucker/projects"><li>Projects</li></Link>
-                    <Link to="/ben-tucker/about"><li>About</li></Link>
-                    <a href="mailto:bwtucker4@gmail.com"><li>Contact</li></a>
+                    <li><button className='menu-btn'>Projects</button></li>
+                    <li><button className='menu-btn'>About</button></li>
+                    <li><button className='menu-btn'>Contact</button></li>
+                    <li><button className='menu-resume-btn'>Resume</button></li>
                 </ul>
-                <div className='menu-links'>
-                    <a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
-                        <Icon path={mdiGithub}
-                        className='social-link'
-                        size={1.5}
-                        color="white"/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
-                        <Icon path={mdiLinkedin}
-                        className='social-link'
-                        size={1.5}
-                        color="white"/>
-                    </a>
-                    <a href={resume} download>
-                        <Icon path={mdiFileAccount}
-                        className='social-link'
-                        size={1.5}
-                        color="white"/>	
-                    </a>
-                </div>
             </div>
          </div>
     )
