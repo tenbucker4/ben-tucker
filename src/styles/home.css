@@ -32,26 +32,9 @@
 }
 
 /* Home page sections */
-section {
-    position: relative;
-    z-index: 2;
-    height: calc(100vh - calc(100vh - 100%));
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    width: 100vw;
-    overflow: hidden;
-}
 
 .title-div {
     position: relative;
-}
-
-.title-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12vw;
-    z-index: 50;
 }
 
 .text-name {

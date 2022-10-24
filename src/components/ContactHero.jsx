@@ -36,13 +36,6 @@ const ContactHero = ({ contactRef, contactSection }) => {
 					</div>
 				</div>
 			</div>
-			<div className="hero-image-container">
-				<div className='hero-image'>
-					<Icon path={mdiMessageReplyText}
-					className='avatar'
-					color="#ff4d5a"/>
-				</div>
-			</div>
 		</section>
 	)
 }

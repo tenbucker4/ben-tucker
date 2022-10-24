@@ -1,7 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Icon from '@mdi/react'
-import { mdiAccount } from '@mdi/js';
 
 const AboutHero = ({ aboutRef, aboutSection }) => {
 	return (
@@ -16,13 +14,6 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 				<Link to="/ben-tucker/about">
 					<button className='learn-more-btn'>Learn More</button>
 				</Link>
-			</div>
-			<div className="hero-image-container">
-				<div className='hero-image'>
-					<Icon path={mdiAccount}
-					className='avatar'
-					color="#ff4d5a"/>
-				</div>
 			</div>
 		</section>
 	)
