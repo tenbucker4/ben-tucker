@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ProjectHero = ({ projectRef, projectSection }) => {
 	return (
-		<section>
+		<section id="projects">
 			<div className='title-text' ref={projectSection}>
 				<div className='text-name' ref={projectRef}>Click</div>
 				<div className='blocks'>
