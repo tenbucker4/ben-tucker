@@ -106,10 +106,6 @@ p {
     color: var(--main-white);
 }
 
-.scroll-restrict {
-    overflow-y: hidden;
-}
-
 @media (max-width: 1050px) {
     main {
         padding: 0 100px;

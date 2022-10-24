@@ -5,8 +5,7 @@ import Header from '../components/Header'
 import ProjectHero from '../components/ProjectHero'
 import AboutHero from '../components/AboutHero'
 import ContactHero from '../components/ContactHero'
-import ProgressBar from '../components/ProgressBar'
-import Menu from '../components/Menu';
+import LeftLinks from '../components/LeftLinks';
 import "../styles/home.css"
 
 const Home = ({ menuOpen, setMenuOpen }) => {
@@ -28,12 +27,13 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 	return (
 		<>
 			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-			<main style={{ filter: menuOpen? "blur(4px)" : "none", pointerEvents: menuOpen? "none" : "default" }}>
+			<main style={{ filter: menuOpen? "blur(4px)" : "none", pointerEvents: menuOpen? "none" : "inherit" }}>
 				<Title titleSection={titleSection} titleRef={titleRef} />
 				<ProjectHero projectSection={projectSection} projectRef={projectRef} />
 				<AboutHero aboutSection={aboutSection} aboutRef={aboutRef}/>
 				<ContactHero contactSection={contactSection} contactRef={contactRef}/>
 			</main>
+			<LeftLinks />
 		</>
 		
 	)

@@ -42,6 +42,40 @@
     align-self: flex-start;
 }
 
+.side-link-nav {
+    position: fixed;
+    top: 125px;
+    left: 50px;
+    right: 50px;
+    width: 30px;
+    height: calc(100vh - 175px);
+    z-index: 2;
+    display: flex;
+}
+
+.side-link-nav .block {
+    height: 100%;
+    width: 2px;
+    background-color: var(--off-white);
+}
+
+.side-link-nav .contact-email {
+    z-index: 5;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 25%;
+    left: -70px;
+}
+
+.socials-links {
+    position: absolute;
+    bottom: 10%;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 /* Project Hero */
 .hero-image-container {
     display: flex;
@@ -161,35 +195,6 @@
 .menu-resume-btn {
     margin-top: 40px;
     padding: 0.5rem 1rem;
-}
-
-@media (max-width: 1200px) {
-    /* .progress {
-        left: initial;
-        bottom: 20px;
-        height: 40px;
-        width: 100%;
-        justify-content: center;
-        align-items: flex-start;
-        z-index: 9;
-    }
-
-    .progress-bar-container {
-        flex-direction: row;
-        align-items: flex-end;
-        height: 40px;
-    }
-
-    .progress-bar {
-        width: 3px;
-        height: 20px;
-        transition: height 0.2s ease-in-out;
-    }
-
-    .progress-bar.active {
-        width: 3px;
-        height: 40px;
-    } */
 }
 
 @media (min-width: 500px) {

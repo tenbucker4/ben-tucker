@@ -1,10 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import { mdiGithub, mdiLinkedin, mdiFileAccount } from '@mdi/js';
-import Icon from '@mdi/react'
-import resume from "../media/Ben-Tucker-Resume.pdf";
+import React, { useEffect } from 'react'
 
-const Menu = ({ menuOpen }) => {
+const Menu = ({ menuOpen, setMenuOpen }) => {
 
     return (
         <div className='menu' style={{ right: menuOpen ? "0" : "-100%" }}>
