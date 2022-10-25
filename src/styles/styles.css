@@ -3,6 +3,7 @@
     --main-accent: #5cd783;
     --off-white: #bdbcb1;
     --main-bg: #030302;
+    --lighter-bg: #1b1b1b;
 }
 
 *,
@@ -93,6 +94,7 @@ h3 {
 .section-header {
     display: flex;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .section-header::after {

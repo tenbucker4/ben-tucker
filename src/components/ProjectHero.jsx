@@ -7,10 +7,11 @@ const ProjectHero = ({ projectRef, projectSection }) => {
 	return (
 		<section id="projects">
 			<h2 className='section-header bright'>My Projects</h2>
+			<ul>
 			{allProjects.map((project, index) => {
                     return (
-                        <Project 
-                            key={index}
+						<li key={index} className='project-list-entry'>
+							<Project 
                             imgSrc={project.imgSrc}
                             title={project.title}
                             type={project.type}
@@ -18,9 +19,11 @@ const ProjectHero = ({ projectRef, projectSection }) => {
                             stack={project.techStack}
                             codeLink={project.codeLink}
                             liveLink={project.liveLink}
-                        />
+                        	/>
+						</li> 
                     )
                 })}
+			</ul>
 		</section>
 	)
 }
