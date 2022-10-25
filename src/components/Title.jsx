@@ -7,12 +7,12 @@ const Title = ({ titleRef, titleSection }) => {
 			<div className='title-text'>
 				<p className='serif main-accent p-smaller-text'>Hi, my name is</p>
 				<h1 className='text-name bright' ref={titleRef}>Ben Tucker.</h1>
-				<h1 className='grey-text'>I build things on the web.</h1>
+				<h1 className='grey-text'>I build digital products.</h1>
 				<div className='blocks'>
 					<div className='block left-block'></div>
 					<div className='block right-block'></div>
 				</div>
-				<p className='grey-text p-truncate'>I'm a frontend developer and analytical chemist excited by challenging problems, learning, and building functional and intuitive digital products.</p>
+				<p className='grey-text p-truncate'>I'm a frontend developer and analytical chemist excited by challenging problems, learning, and building functional and intuitive products for the web.</p>
 				<button className='title-call-to-action'>See my work</button>
 			</div>
 		</section>

@@ -1,7 +1,4 @@
 import React from 'react'
-import Icon from '@mdi/react'
-import { mdiGithub, mdiLinkedin, mdiFileAccount, mdiMessageReplyText } from '@mdi/js';
-import resume from "../media/Ben-Tucker-Resume.pdf";
 
 const ContactHero = ({ contactRef, contactSection }) => {
 	return (
@@ -15,24 +12,6 @@ const ContactHero = ({ contactRef, contactSection }) => {
 				<div className='bio contact-bio'>
 					<a href="mailto:bwtucker4@gmail.com"><p>bwtucker4@gmail.com</p></a>
 					<div className='contact-links'>
-						<a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
-							<Icon path={mdiGithub}
-							className='social-link'
-							size={1.5}
-							color="white"/>
-						</a>
-						<a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
-							<Icon path={mdiLinkedin}
-							className='social-link'
-							size={1.5}
-							color="white"/>
-						</a>
-						<a href={resume} download>
-							<Icon path={mdiFileAccount}
-							className='social-link'
-							size={1.5}
-							color="white"/>	
-						</a>
 					</div>
 				</div>
 			</div>

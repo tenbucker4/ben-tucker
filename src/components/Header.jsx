@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react'
 import Menu from './Menu';
 import resume from "../media/Ben-Tucker-Resume.pdf";
 import "../styles/header.css"
@@ -17,7 +16,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 				<button className='header-btn'>Projects</button>
 				<button className='header-btn'>About</button>
 				<button className='header-btn'>Contact</button>
-				<button className='resume-btn'>Resume</button>
+				<a href={resume} download><button className='resume-btn'>Resume</button></a>
 				<div className='hamburger' onClick={() => setMenuOpen(prev => !prev)}>
 					<span className={menuOpen ? "hamburger-bun top-bun active" : "hamburger-bun top-bun"}></span>
 					<span className={menuOpen ? "hamburger-bun bottom-bun active" : "hamburger-bun bottom-bun"}></span>

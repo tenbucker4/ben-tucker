@@ -80,7 +80,19 @@
     left: 8px;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+}
+
+.social-link {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.social-link:hover {
+    transform: translateX(1px);
+}
+
+.social-link:hover path {
+    fill: var(--main-accent) !important;
 }
 
 /* Project Hero */

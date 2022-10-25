@@ -8,12 +8,19 @@ const LeftLinks = () => {
 			<div className="side-links">
 				<a href="mailto:bwtucker4@gmail.com"><div className="contact-email serif">bwtucker4@gmail.com</div></a>
 				<div className="socials-links">
-					<Icon path={mdiGithub}
-					size={1.2}
-					color="#bdbcb1"/>
-					<Icon path={mdiLinkedin}
-					size={1.2}
-					color="#bdbcb1"/>
+					<a href="https://github.com/tenbucker4" target="_blank" rel='noreferrer'>
+						<Icon path={mdiGithub}
+						className='social-link'
+						size={1.2}
+						color="#bdbcb1"/>
+					</a>
+					<a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
+						<Icon path={mdiLinkedin}
+						className='social-link'
+						size={1.2}
+						color="#bdbcb1"/>
+					</a>
+					
 				</div>
 			</div>
 			<div className='block'></div>
