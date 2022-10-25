@@ -1,17 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Project from "./Project"
+import allProjects from "../projects/allProjects"
+import "../styles/projects.css"
 
 const ProjectHero = ({ projectRef, projectSection }) => {
 	return (
 		<section id="projects">
-			<div className='title-text' ref={projectSection}>
-				<div className='text-name' ref={projectRef}>Click</div>
-				<div className='blocks'>
-					<div className='block left-block'></div>
-					<div className='block right-block'></div>
-				</div>
-				<div className='bio'>Featured project</div>
-			</div>
+			<h2 className='section-header bright'>My Projects</h2>
+			{allProjects.map((project, index) => {
+                    return (
+                        <Project 
+                            key={index}
+                            imgSrc={project.imgSrc}
+                            title={project.title}
+                            type={project.type}
+                            description={project.description}
+                            stack={project.techStack}
+                            codeLink={project.codeLink}
+                            liveLink={project.liveLink}
+                        />
+                    )
+                })}
 		</section>
 	)
 }

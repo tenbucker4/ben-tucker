@@ -20,7 +20,6 @@ const LeftLinks = () => {
 						size={1.2}
 						color="#bdbcb1"/>
 					</a>
-					
 				</div>
 			</div>
 			<div className='block'></div>
