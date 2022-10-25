@@ -19,7 +19,7 @@
     position: absolute;
     background-color: var(--main-accent);
     width: 80px;
-    height: 2px;
+    height: 1px;
     border-radius: 2px;
 }
 
@@ -55,7 +55,7 @@
 
 .side-link-nav .block {
     height: 100%;
-    width: 2px;
+    width: 1px;
     background-color: var(--off-white);
 }
 

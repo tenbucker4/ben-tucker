@@ -77,6 +77,15 @@ button:hover {
     background-color: #142f1c;
 }
 
+.inline-btn {
+    border: none;
+}
+
+.inline-btn:hover {
+    background-color: transparent;
+    text-decoration: 1px underline var(--main-accent);
+}
+
 h1 {
     font-size: clamp(40px, 8vw, 76px);
     font-weight: 500;
