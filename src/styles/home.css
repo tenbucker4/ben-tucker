@@ -19,7 +19,7 @@
     position: absolute;
     background-color: var(--main-accent);
     width: 80px;
-    height: 3px;
+    height: 2px;
     border-radius: 2px;
 }
 
@@ -45,7 +45,7 @@
 .side-link-nav {
     position: fixed;
     top: 125px;
-    left: 50px;
+    left: 35px;
     right: 50px;
     width: 30px;
     height: calc(100vh - 175px);
@@ -60,11 +60,18 @@
 }
 
 .side-link-nav .contact-email {
+    cursor: pointer;
     z-index: 5;
     transform: rotate(90deg);
     position: absolute;
     top: 25%;
     left: -70px;
+    transition: all 0.2s;
+}
+
+.side-link-nav .contact-email:hover {
+    color: var(--main-accent);
+    transform: translateX(1px) rotate(90deg);
 }
 
 .socials-links {
@@ -195,6 +202,12 @@
 .menu-resume-btn {
     margin-top: 40px;
     padding: 0.5rem 1rem;
+}
+
+@media (max-width: 750px) {
+    .side-link-nav {
+        display: none;
+    }
 }
 
 @media (min-width: 500px) {

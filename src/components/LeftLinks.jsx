@@ -6,7 +6,7 @@ const LeftLinks = () => {
     return (
         <div className='side-link-nav'>
 			<div className="side-links">
-				<div className="contact-email serif">bwtucker4@gmail.com</div>
+				<a href="mailto:bwtucker4@gmail.com"><div className="contact-email serif">bwtucker4@gmail.com</div></a>
 				<div className="socials-links">
 					<Icon path={mdiGithub}
 					size={1.2}
