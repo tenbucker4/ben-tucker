@@ -216,7 +216,7 @@
     padding: 0.5rem 1rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1050px) {
     .side-link-nav {
         display: none;
     }

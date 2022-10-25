@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.project-list-entry:not(:last-of-type) {
+.project-list-entry {
     margin-bottom: 6rem;
 }
 

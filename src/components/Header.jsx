@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from './Menu';
 import resume from "../media/Ben-Tucker-Resume.pdf";
+import Logo from './Logo';
 import "../styles/header.css"
 
 const Header = ({ menuOpen, setMenuOpen }) => {
@@ -11,7 +12,9 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<header style={{ backgroundColor: menuOpen? "transparent" : "#03030290" }}>
-			<button onClick={() => scrollTop()} style={{ filter: menuOpen? "blur(4px)" : "none", cursor: menuOpen? "default" : "pointer" }} className='home-link main-accent serif'>Ben Tucker</button>
+			<button onClick={() => scrollTop()} style={{ filter: menuOpen? "blur(4px)" : "none", cursor: menuOpen? "default" : "pointer" }} className='home-link main-accent serif'>
+				<Logo />
+			</button>
 			<div className='header-nav'>
 				<button className='header-btn'>Projects</button>
 				<button className='header-btn'>About</button>
