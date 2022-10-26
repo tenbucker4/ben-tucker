@@ -5,7 +5,7 @@ import "../styles/projects.css"
 
 const ProjectHero = ({ projectRef, projectSection }) => {
 	return (
-		<section id="projects">
+		<section ref={projectSection} id="projects">
 			<h2 className='section-header bright'>My Projects</h2>
 			<ul>
 			{allProjects.map((project, index) => {

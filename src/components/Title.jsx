@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Title = ({ titleRef, titleSection }) => {
+const Title = ({ scroll, titleRef, titleSection, projectSection }) => {
 
 	return (
 		<section className='title-div' ref={titleSection}>
@@ -13,7 +13,7 @@ const Title = ({ titleRef, titleSection }) => {
 					<div className='block right-block'></div>
 				</div>
 				<p className='grey-text p-truncate'>I'm a frontend developer and analytical chemist excited by challenging problems, learning, and building functional and intuitive products for the web.</p>
-				<button className='title-call-to-action'>See my work</button>
+				<button className='title-call-to-action' onClick={() => scroll(projectSection)}>See my work</button>
 			</div>
 		</section>
 	)
