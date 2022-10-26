@@ -9,11 +9,7 @@ import LeftLinks from '../components/LeftLinks';
 import "../styles/home.css"
 
 const Home = ({ menuOpen, setMenuOpen }) => {
-	const [titleRef, titleInView] = useInView();
-	const [projectRef, projectInView] = useInView();
-	const [aboutRef, aboutInView] = useInView();
-	const [contactRef, contactInView] = useInView();
-
+	const mainBody = useRef();
 	const titleSection = useRef();
 	const projectSection = useRef();
 	const aboutSection = useRef();
@@ -31,12 +27,12 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 
 	return (
 		<>
-			<Header scroll={scroll} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-			<main style={{ filter: menuOpen? "blur(4px)" : "none", pointerEvents: menuOpen? "none" : "inherit" }}>
-				<Title scroll={scroll} titleSection={titleSection} titleRef={titleRef} projectSection={projectSection}/>
-				<ProjectHero projectSection={projectSection} projectRef={projectRef} />
-				<AboutHero aboutSection={aboutSection} aboutRef={aboutRef}/>
-				<ContactHero contactSection={contactSection} contactRef={contactRef}/>
+			<Header mainBody={mainBody} scroll={scroll} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+			<main ref={mainBody} style={{ filter: menuOpen? "blur(4px)" : "none", pointerEvents: menuOpen? "none" : "inherit" }}>
+				<Title scroll={scroll} titleSection={titleSection} projectSection={projectSection}/>
+				<ProjectHero projectSection={projectSection} />
+				<AboutHero aboutSection={aboutSection} />
+				<ContactHero contactSection={contactSection} />
 			</main>
 			<LeftLinks />
 		</>

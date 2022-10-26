@@ -4,7 +4,7 @@ import resume from "../media/Ben-Tucker-Resume.pdf";
 import Logo from './Logo';
 import "../styles/header.css"
 
-const Header = ({ scroll, projectSection, aboutSection, contactSection, menuOpen, setMenuOpen }) => {
+const Header = ({ mainBody, scroll, projectSection, aboutSection, contactSection, menuOpen, setMenuOpen }) => {
 	const [shadow, setShadow] = useState("none");
 
 	const listenScrollEvent = () => {
@@ -43,7 +43,7 @@ const Header = ({ scroll, projectSection, aboutSection, contactSection, menuOpen
 					<span className={menuOpen ? "hamburger-bun bottom-bun active" : "hamburger-bun bottom-bun"}></span>
 				</div>
 			</div>
-			<Menu setMenuOpen={setMenuOpen} menuOpen={menuOpen}/>
+			<Menu mainBody={mainBody} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} setMenuOpen={setMenuOpen} menuOpen={menuOpen}/>
 		</header>
 	)
 }
