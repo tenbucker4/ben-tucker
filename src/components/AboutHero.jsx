@@ -23,13 +23,13 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 							<Icon path={mdiArrowRightThin}
 							size={1}
 							color="#5cd783"/>
-							CSS
+							React.js
 						</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
 							size={1}
 							color="#5cd783"/>
-							JavaScript
+							CSS
 						</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
@@ -41,7 +41,7 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 							<Icon path={mdiArrowRightThin}
 							size={1}
 							color="#5cd783"/>
-							React.js
+							JavaScript
 						</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}

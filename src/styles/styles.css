@@ -68,7 +68,7 @@ button {
     background-color: transparent;
     border: 1px solid var(--main-accent);
     border-radius: 5px;
-    color: var(--main-white);
+    color: var(--main-accent);
     font-family: "Roboto Mono";
     transition: background-color 0.2s ease-in-out;
 }
@@ -118,7 +118,7 @@ h3 {
 }
 
 p {
-    font-size: clamp(16px, 7vw, 18px);
+    font-size: clamp(16px, 5vw, 18px);
 }
 
 .p-smaller-text {
