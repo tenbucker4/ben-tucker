@@ -4,7 +4,7 @@ import resume from "../media/Ben-Tucker-Resume.pdf";
 import Logo from './Logo';
 import "../styles/header.css"
 
-const Header = ({ menuOpen, setMenuOpen }) => {
+const Header = ({ scroll, projectSection, aboutSection, contactSection, menuOpen, setMenuOpen }) => {
 	const [shadow, setShadow] = useState("none");
 
 	const listenScrollEvent = () => {
@@ -34,9 +34,9 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 				<Logo />
 			</button>
 			<div className='header-nav'>
-				<button className='header-btn'>Projects</button>
-				<button className='header-btn'>About</button>
-				<button className='header-btn'>Contact</button>
+				<button className='header-btn' onClick={() => scroll(projectSection)}>Projects</button>
+				<button className='header-btn' onClick={() => scroll(aboutSection)}>About</button>
+				<button className='header-btn' onClick={() => scroll(contactSection)}>Contact</button>
 				<a href={resume} download><button className='resume-btn'>Resume</button></a>
 				<div className='hamburger' onClick={() => setMenuOpen(prev => !prev)}>
 					<span className={menuOpen ? "hamburger-bun top-bun active" : "hamburger-bun top-bun"}></span>

@@ -25,13 +25,13 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 
 	const scroll = (section) => {
 		console.log(section)
-		section.current?.scrollIntoView({ behavior: "smooth" });
+		section.current?.scrollIntoView();
 	}
 
 
 	return (
 		<>
-			<Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+			<Header scroll={scroll} projectSection={projectSection} aboutSection={aboutSection} contactSection={contactSection} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 			<main style={{ filter: menuOpen? "blur(4px)" : "none", pointerEvents: menuOpen? "none" : "inherit" }}>
 				<Title scroll={scroll} titleSection={titleSection} titleRef={titleRef} projectSection={projectSection}/>
 				<ProjectHero projectSection={projectSection} projectRef={projectRef} />
