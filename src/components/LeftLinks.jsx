@@ -12,13 +12,13 @@ const LeftLinks = () => {
 						<Icon path={mdiGithub}
 						className='social-link'
 						size={1.2}
-						color="#bdbcb1"/>
+						color="#e4e7f6"/>
 					</a>
 					<a href="https://www.linkedin.com/in/ben-tucker-6a520911a/" target="_blank" rel='noreferrer'>
 						<Icon path={mdiLinkedin}
 						className='social-link'
 						size={1.2}
-						color="#bdbcb1"/>
+						color="#e4e7f6"/>
 					</a>
 				</div>
 			</div>

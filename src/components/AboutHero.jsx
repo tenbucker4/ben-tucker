@@ -17,36 +17,36 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
 							size={1}
-							color="#5cd783"/>
+							color="#07dfc7"/>
 							HTML</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
 							size={1}
-							color="#5cd783"/>
+							color="#07dfc7"/>
 							React.js
 						</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
 							size={1}
-							color="#5cd783"/>
+							color="#07dfc7"/>
 							CSS
 						</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
 							size={1}
-							color="#5cd783"/>
+							color="#07dfc7"/>
 							Sass
 						</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
 							size={1}
-							color="#5cd783"/>
+							color="#07dfc7"/>
 							JavaScript
 						</li>
 						<li className='skill-entry'>
 							<Icon path={mdiArrowRightThin}
 							size={1}
-							color="#5cd783"/>
+							color="#07dfc7"/>
 							Git
 						</li>
 					</ul>

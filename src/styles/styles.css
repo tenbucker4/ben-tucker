@@ -1,9 +1,9 @@
 :root {
-    --main-white: #fdfcef;
-    --main-accent: #5cd783;
-    --off-white: #bdbcb1;
-    --main-bg: #030302;
-    --lighter-bg: #1b1b1b;
+    --main-white: #ffffff;
+    --main-accent: #07dfc7;
+    --off-white: #e4e7f6;
+    --main-bg: #343a49;
+    --lighter-bg: #59637c;
 }
 
 *,
@@ -74,7 +74,7 @@ button {
 }
 
 button:hover {
-    background-color: #142f1c;
+    background-color: #454d61;
 }
 
 .inline-btn {

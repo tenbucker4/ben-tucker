@@ -6,7 +6,7 @@
 .title-text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .blocks {
@@ -19,7 +19,7 @@
     position: absolute;
     background-color: var(--main-accent);
     width: 80px;
-    height: 1px;
+    height: 2px;
     border-radius: 2px;
 }
 
@@ -62,21 +62,21 @@
 .side-link-nav .contact-email {
     cursor: pointer;
     z-index: 5;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     position: absolute;
-    top: 25%;
+    top: 23%;
     left: -70px;
     transition: all 0.2s;
 }
 
 .side-link-nav .contact-email:hover {
     color: var(--main-accent);
-    transform: translateX(1px) rotate(90deg);
+    transform: translateX(1px) rotate(-90deg);
 }
 
 .socials-links {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 8px;
     display: flex;
     flex-direction: column;
@@ -204,6 +204,7 @@
 .menu-btn {
     border: none;
     transition: all 0.2s;
+    color: var(--off-white);
 }
 
 .menu-btn:hover {
