@@ -9,7 +9,7 @@ const allProjects = [
         title: "Click",
         type: "Instant Messaging Application",
         description:
-            "An instant messaging application featuring user authentication, text and image messaging, real-time online and offline contact status, and profile customization.",
+            "An instant messaging application featuring user authentication, text and image messaging, online and offline contact status, and profile customization.",
         techStack: "HTML, CSS, JavaScript, React, Firebase",
         codeLink: "https://github.com/tenbucker4/click",
         liveLink: "https://tenbucker4.github.io/click/",

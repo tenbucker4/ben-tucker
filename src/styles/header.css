@@ -29,6 +29,7 @@ header {
     font-family: "Roboto Mono";
     border: none;
     transition: all 0.2s;
+    color: var(--off-white);
 }
 
 .header-btn:hover {
