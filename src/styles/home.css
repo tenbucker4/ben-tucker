@@ -223,8 +223,8 @@
     }
 }
 
-@media (min-width: 500px) {
-    .menu-links {
-        display: none;
+@media (max-width: 500px) {
+    .title-text {
+        gap: 1rem;
     }
 }

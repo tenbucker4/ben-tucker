@@ -1,5 +1,9 @@
 #contact {
     max-width: 600px;
+    justify-content: flex-start;
+    min-height: 0;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
 }
 
 .contact-form {

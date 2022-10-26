@@ -118,7 +118,7 @@ h3 {
 }
 
 p {
-    font-size: clamp(16px, 5vw, 18px);
+    font-size: clamp(16px, 4vw, 18px);
 }
 
 .p-smaller-text {
@@ -145,11 +145,23 @@ p {
     main {
         padding: 0 100px;
     }
+
+    .section-header::after {
+        width: 200px;
+    }
 }
 
 @media (max-width: 750px) {
     main {
         padding: 0 50px;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-header::after {
+        width: 100px;
     }
 }
 
