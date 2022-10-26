@@ -23,13 +23,13 @@ const Project = ({ imgSrc, title, description, stack, codeLink, liveLink }) => {
 						<Icon path={mdiGithub}
 						className='project-link'
 						size={1.2}
-						color="#bdbcb1"/>
+						color="#e4e7f6"/>
 					</a>
 					<a href={liveLink} target="_blank" rel='noreferrer'>
 						<Icon path={mdiOpenInNew}
 						className='project-link'
 						size={1.2}
-						color="#bdbcb1"/>
+						color="#e4e7f6"/>
 					</a>
                 </div>
             </div>
