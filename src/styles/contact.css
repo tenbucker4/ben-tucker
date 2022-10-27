@@ -65,9 +65,3 @@ form button {
     background-color: var(--main-bg);
     padding: 0 0.1rem;
 }
-/* 
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown).form-input:not(:focus) + .form-label {
-    top: -0.5rem;
-    font-size: 12px;
-} */
