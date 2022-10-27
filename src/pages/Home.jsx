@@ -20,7 +20,6 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 	}, [])
 
 	const scroll = (section) => {
-		console.log(section)
 		section.current?.scrollIntoView();
 	}
 
