@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/contact.css"
 
-const ContactHero = ({ contactRef, contactSection }) => {
+const ContactHero = ({ contactSection }) => {
 	return (
 		<section id="contact" ref={contactSection}>
 			<h2 className='section-header bright'>Contact Me</h2>
@@ -9,15 +9,15 @@ const ContactHero = ({ contactRef, contactSection }) => {
 			<div className="contact-form">
 				<form autoComplete='off'>
 					<div className='form-entry'>
-						<input name="name" className="form-input" id="name" placeholder=' ' type="text" />
+						<input name="name" className="form-input" id="name" type="text" />
 						<label className="form-label" htmlFor="name">Name</label>
 					</div>
 					<div className='form-entry'>
-						<input placeholder=' ' name="email" className="form-input" id="email" type="email" />
+						<input name="email" className="form-input" id="email" type="email" />
 						<label className="form-label" htmlFor="email">Email</label>
 					</div>
 					<div className='form-entry'>
-						<textarea name="message" className='form-input' placeholder=' ' type="text" id="message" />
+						<textarea name="message" className='form-input' type="text" id="message" />
 						<label className='form-label' htmlFor="text">Message</label>
 					</div>
 					<button>Send</button>
