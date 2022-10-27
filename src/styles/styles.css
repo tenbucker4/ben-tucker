@@ -101,6 +101,7 @@ h3 {
 }
 
 .section-header {
+    padding-top: 75px;
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
