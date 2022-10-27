@@ -5,7 +5,7 @@ import profilePic from "../media/profilepic.jpg"
 import resume from "../media/Ben-Tucker-Resume.pdf"
 import "../styles/about.css"
 
-const AboutHero = ({ aboutRef, aboutSection }) => {
+const AboutHero = ({ scroll, contactSection, aboutSection }) => {
 	return (
 		<section ref={aboutSection}>
 			<h2 className='section-header bright'>About Me</h2>
@@ -51,7 +51,7 @@ const AboutHero = ({ aboutRef, aboutSection }) => {
 						</li>
 					</ul>
 					<p>Having previously worked in the green energy sector, sustainable practices are a real passion of mine. I'd love to combine my skillsets of chemistry and software development and build products that will have a positive impact on our planet.</p>
-					<p>I'm open to opportunities where I can contribute to ambitious projects and grow as a developer. If you have an opportunity you think I'd be a good fit for, please don't hesitate to <button className='inline-btn'><p className='main-accent'>contact me</p></button>.</p>
+					<p>I'm open to opportunities where I can contribute to ambitious projects and grow as a developer. If you have an opportunity you think I'd be a good fit for, please don't hesitate to <button className='inline-btn' onClick={() => scroll(contactSection)}><p className='main-accent'>contact me</p></button>.</p>
 					<a href={resume} download><button className='resume-btn'>Resume</button></a>
 				</div>
 				<div className="bio-right">

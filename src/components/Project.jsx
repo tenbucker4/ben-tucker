@@ -8,7 +8,7 @@ const Project = ({ imgSrc, title, description, stack, codeLink, liveLink }) => {
         <>
             <div className='project-media'>
                 <a className='project-image-link' href={liveLink} target="_blank" rel='noreferrer'>
-                    <img src={imgSrc} className="project-image" href={title}></img>
+                    <img src={imgSrc} alt={title} className="project-image" href={title}></img>
                 </a>
             </div>
             <div className="project-text">

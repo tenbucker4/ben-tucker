@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { useInView } from "react-intersection-observer";
+import React, { useEffect, useRef } from 'react'
 import Title from '../components/Title'
 import Header from '../components/Header'
 import ProjectHero from '../components/ProjectHero'
@@ -30,7 +29,7 @@ const Home = ({ menuOpen, setMenuOpen }) => {
 			<main ref={mainBody} style={{ filter: menuOpen? "blur(4px)" : "none", pointerEvents: menuOpen? "none" : "inherit" }}>
 				<Title scroll={scroll} titleSection={titleSection} projectSection={projectSection}/>
 				<ProjectHero projectSection={projectSection} />
-				<AboutHero aboutSection={aboutSection} />
+				<AboutHero scroll={scroll} contactSection={contactSection} aboutSection={aboutSection} />
 				<ContactHero contactSection={contactSection} />
 			</main>
 			<LeftLinks />

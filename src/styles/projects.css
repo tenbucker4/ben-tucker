@@ -99,4 +99,8 @@
         align-self: center;
         padding: 0.5rem;
     }
+
+    .project-list-entry:nth-child(2n + 2) .project-text .project-links {
+        justify-content: flex-end;
+    }
 }

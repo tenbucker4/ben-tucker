@@ -3,7 +3,7 @@ import Project from "./Project"
 import allProjects from "../projects/allProjects"
 import "../styles/projects.css"
 
-const ProjectHero = ({ projectRef, projectSection }) => {
+const ProjectHero = ({ projectSection }) => {
 	return (
 		<section ref={projectSection} id="projects">
 			<h2 className='section-header bright'>My Projects</h2>
