@@ -87,7 +87,7 @@
 @media (max-width: 750px) {
     .project-media,
     .project-list-entry:nth-child(2n + 2) .project-media {
-        filter: brightness(0.1);
+        filter: brightness(0.5);
         align-self: flex-start;
         grid-area: 1 / 1 / 2 / -1;
     }
