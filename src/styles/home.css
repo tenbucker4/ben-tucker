@@ -165,6 +165,7 @@
     width: min(75vw, 400px);
     height: 100vh;
     background-color: var(--lighter-bg);
+    border-left: 2px solid var(--main-accent);
     z-index: 10;
     transition: all 0.4s ease-in-out;
     display: flex;
